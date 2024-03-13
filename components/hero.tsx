@@ -29,15 +29,15 @@ export default function Hero() {
 
           {/* Section header */}
           <div className="text-center pb-12 md:pb-16">
-            <h1 className="text-5xl md:text-6xl font-extrabold leading-tighter tracking-tighter mb-4" data-aos="zoom-y-out">Designed by entrepreneurs for <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-teal-400">entrepreneus</span></h1>
+            <h1 className="text-5xl md:text-6xl font-extrabold leading-tighter tracking-tighter mb-4" data-aos="zoom-y-out">Designed by entrepreneurs for <span className="bg-clip-text text-transparent bg-gradient-to-r from-[#637ee0] to-[#d699ed]">entrepreneurs</span></h1>
             <div className="max-w-3xl mx-auto">
               <p className="text-xl text-gray-600 mb-8" data-aos="zoom-y-out" data-aos-delay="150">Master the art of fundraising, accelerate your business growth, and position yourself as a standout entrepreneur.</p>
               <div className="max-w-xs mx-auto sm:max-w-none sm:flex sm:justify-center" data-aos="zoom-y-out" data-aos-delay="300">
                 <div>
-                  <a className="btn text-white bg-blue-600 hover:bg-blue-700 w-full mb-4 sm:w-auto sm:mb-0" href="#0">Join our community</a>
+                  <a className="rounded-3xl btn text-black bg-[#637ee0] hover:text-white duration-150 w-full mb-4 sm:w-auto sm:mb-0" href="#0">Join our community</a>
                 </div>
                 <div>
-                  <a className="btn text-white bg-gray-900 hover:bg-gray-800 w-full sm:w-auto sm:ml-4" href="#0">Discover More</a>
+                  <a className="rounded-3xl btn text-[#d699ed] bg-white border-[#d699ed] border hover:bg-[#d699ed] hover:text-white duration-150 w-full sm:w-auto sm:ml-4" href="#0">Discover More</a>
                 </div>
               </div>
             </div>
