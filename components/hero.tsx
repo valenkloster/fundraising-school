@@ -1,6 +1,3 @@
-import VideoThumb from '@/public/images/hero-image.png'
-import ModalVideo from '@/components/modal-video'
-
 export default function Hero() {
   return (
     <section className="relative ">
@@ -34,7 +31,7 @@ export default function Hero() {
               <p className="text-xl text-gray-600 mb-8" data-aos="zoom-y-out" data-aos-delay="150">Master the art of fundraising, accelerate your business growth, and position yourself as a standout entrepreneur.</p>
               <div className="max-w-xs mx-auto sm:max-w-none sm:flex sm:justify-center" data-aos="zoom-y-out" data-aos-delay="300">
                 <div>
-                  <a className="rounded-3xl btn text-black bg-[#637ee0] hover:text-white duration-150 w-full mb-4 sm:w-auto sm:mb-0" href="#0">Join our community</a>
+                  <a className="rounded-3xl btn text-black bg-[#637ee0] hover:text-white duration-150 w-full mb-4 sm:w-auto sm:mb-0" href="https://airtable.com/appudjkzcwnIO9ch9/shrgkVnuPeWiMGJu6" target="_blank" rel="noopener">Join our community</a>
                 </div>
                 <div>
                   <a className="rounded-3xl btn text-[#d699ed] bg-white border-[#d699ed] border hover:bg-[#d699ed] hover:text-white duration-150 w-full sm:w-auto sm:ml-4" href="#0">Discover More</a>
@@ -42,11 +39,7 @@ export default function Hero() {
               </div>
             </div>
           </div>
-
-
-
         </div>
-
       </div>
     </section>
   )

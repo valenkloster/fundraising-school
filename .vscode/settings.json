@@ -1,4 +1,16 @@
 {
   "typescript.tsdk": "node_modules/typescript/lib",
-  "typescript.enablePromptUseWorkspaceTsdk": true
+  "typescript.enablePromptUseWorkspaceTsdk": true,
+  "cSpell.words": [
+    "berman",
+    "borrero",
+    "kaszek",
+    "lightspeed",
+    "nico",
+    "nubank",
+    "passoni",
+    "rappi",
+    "Simón",
+    "Vélez"
+  ]
 }
