@@ -27,11 +27,12 @@ export default function YtVideo() {
                 <div className="max-w-sm md:max-w-4xl mx-auto px-4 sm:px-6">
                     <h2 className="h2 mb-2" data-aos="zoom-y-out">Good-bye to complex startup hassle.</h2>
                     <p className="text-xl text-gray-600 pb-12 md:pb-16" data-aos="zoom-y-out">Say farewell to the complexities of the past and unlock a smoother path to success. Welcome to a new era of fundraising simplicity and efficiency.</p>
-                    <div className="flex flex-wrap justify-center">
+                    <div className="flex flex-col">
                         {
                             cards.map((card, index) => (
-                                <article key={index} className="text-left block w-auto max-w-sm gap-2 p-6 m-2 bg-white rounded-xl border-gray-300" data-aos="zoom-y-out">
+                                <article key={index} className="text-left block w-auto gap-2 p-6 m-2 bg-white rounded-xl border-gray-300" data-aos="zoom-y-out">
                                     <h3 className="font-semibold text-lg mb-2">{card.title}</h3>
+                                    <hr className="my-2 w-full border-gray-300" />
                                     <p className="leading-6 text-gray-600">{card.description}</p>
                                 </article>
                             ))
@@ -41,11 +42,13 @@ export default function YtVideo() {
             </section>
             <section className="relative text-center py-12 md:py-20">
                 <div className="max-w-sm md:max-w-4xl mx-auto px-4 sm:px-6 flex flex-col items-center justify-center">
-                    <h2 className="h2 pb-12 md:pb-16" data-aos="zoom-y-out">Embark on this adventure with a captivating video.</h2>
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/1R5-cTsDS-8?si=jQ6gCnYLwsX351rK" title="YouTube video player" frameBorder="0" allowFullScreen></iframe>
+                    <h2 className="h2 mb-2" data-aos="zoom-y-out">Wanna be part of something big?</h2>
+                    <p className="text-xl text-gray-600 pb-12 md:pb-16" data-aos="zoom-y-out">You will receive personalized advice to learn how to actually get funded.</p>
+                    <div className="relative block w-full h-0 pb-[56.25%]">
+                        <iframe className="absolute left-0 top-0 w-full h-full" src="https://www.youtube.com/embed/1R5-cTsDS-8?si=jQ6gCnYLwsX351rK" frameBorder={0} title="YouTube video player" allowFullScreen></iframe>
+                    </div>
                 </div>
             </section>
         </>
-
     )
 }
