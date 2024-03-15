@@ -21,7 +21,7 @@ function Animation({ children }: { children: JSX.Element }) {
 export default function Questions() {
   return (
     <>
-      <section className='relative py-12 md:py-20'>
+      <section className='relative py-12 md:py-20 px-4 sm:px-6'>
         <h2 className="h2 pb-12 md:pb-16 text-center" data-aos="zoom-y-out">Still not convinced? <br /> We’ve got the answers</h2>
         <div data-aos="zoom-y-out" className="max-w-sm md:max-w-4xl mx-auto flex flex-col items-center justify-center border border-[#f5f5f5] bg-[#f5f5f5] rounded-xl p-6">
           <Disclosure>

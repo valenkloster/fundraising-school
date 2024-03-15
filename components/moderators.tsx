@@ -15,11 +15,11 @@ export default function Moderators() {
                 <h2 className="h2 pb-12 md:pb-16" data-aos="zoom-y-out">Organizers and moderators</h2>
                 <div className="mx-auto grid grid-cols-[repeat(auto-fill,minmax(300px,1fr))]">
                     {/* First Item */}
-                    <div className="flex" data-aos="zoom-y-out">
-                        <Image src={laura_gaviria_profile} alt={`Picture of Laura Gaviria Halaby`} width={180} height={180} />
+                    <div className="flex flex-col sm:flex-row justify-center sm:justify-normal items-center" data-aos="zoom-y-out">
+                        <Image src={laura_gaviria_profile} alt={`Picture of Laura Gaviria Halaby`} width={180} height={180} style={{ aspectRatio: 1, display: "block", width: 180, height: 180 }} />
                         <div className="text-left h-auto my-auto flex flex-col">
-                            <h3 className="font-semibold text-lg">Laura Gaviria Halaby</h3>
-                            <ul className="list-disc list-outside marker:text-gray-400 font-light [&>li]:my-1 [&>li]:translate-x-4">
+                            <h3 className="font-semibold  text-center sm:text-lg sm:text-left">Laura Gaviria Halaby</h3>
+                            <ul className="w-[60dvw] sm:w-auto list-disc list-outside marker:text-gray-400 font-light [&>li]:my-1 [&>li]:translate-x-4">
                                 <li>Faktory AI</li>
                                 <li>Ex-SoftBank Founder</li>
                                 <li>SoftBank Operator School</li>
@@ -30,13 +30,13 @@ export default function Moderators() {
                     </div>
 
                     {/* Second Item */}
-                    <div className="flex" data-aos="zoom-y-out">
-                        <Image src={andres_bilbao_profile} alt={`Picture of Andres Bilbao`} width={180} height={180} />
+                    <div className="flex flex-col sm:flex-row justify-center sm:justify-between items-center" data-aos="zoom-y-out">
+                        <Image src={andres_bilbao_profile} alt={`Picture of Andres Bilbao`} width={180} height={180} style={{ aspectRatio: 1, display: "block", width: 180, height: 180 }} />
                         <div className="text-left h-auto my-auto flex flex-col">
-                            <h3 className="font-semibold text-lg">Andrés Bilbao</h3>
-                            <ul className="list-disc list-outside marker:text-gray-400 font-light [&>li]:my-1 [&>li]:translate-x-4">
+                            <h3 className="font-semibold text-center sm:text-lg sm:text-left">Andrés Bilbao</h3>
+                            <ul className="w-[60dvw] sm:w-auto list-disc list-outside marker:text-gray-400 font-light [&>li]:my-1 [&>li]:translate-x-4">
                                 <li>Co-founder
-                                    <div className="my-2 flex gap-2">
+                                    <div className="my-4 flex gap-2">
                                         <Image src={makers} alt="image of Makers" width={32} />
                                         <Image src={b2} alt="image of B2 Founders" width={32} />
                                         <Image src={rappi} alt="image of Rappi" width={58} />

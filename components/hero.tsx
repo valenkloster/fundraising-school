@@ -11,7 +11,7 @@ export default function Hero() {
 
           {/* Section header */}
           <div className="text-center pb-12 md:pb-16">
-            <h1 className="text-5xl md:text-6xl font-extrabold leading-tighter tracking-tighter mb-4" data-aos="zoom-y-out">For entrepreneurs by <span className="bg-clip-text text-transparent bg-gradient-to-r from-[#637ee0] to-[#d699ed]">entrepreneurs</span></h1>
+            <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold leading-tighter tracking-tighter mb-4" data-aos="zoom-y-out">For entrepreneurs by <span className="bg-clip-text text-transparent bg-gradient-to-r from-[#637ee0] to-[#d699ed]">entrepreneurs</span></h1>
             <div className="max-w-3xl mx-auto">
               <p className="text-xl text-gray-600 mb-8" data-aos="zoom-y-out" data-aos-delay="150">Master the art of fundraising, connect with fellow visionaries, and redefine what’s possible for your business. Become an entrepreneurial force.</p>
               <div className="max-w-xs mx-auto sm:max-w-none sm:flex sm:justify-center" data-aos="zoom-y-out" data-aos-delay="300">
