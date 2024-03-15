@@ -33,7 +33,7 @@ export default function Components() {
                             <article key={index} className="text-left flex flex-col gap-2 p-6 m-2 bg-[#f5f5f5] rounded-xl border-gray-300" data-aos="zoom-y-out">
                                 <h3 className="font-semibold text-lg">{card.title}</h3>
                                 <hr className="mt-2 w-full border-gray-300" />
-                                <p className="leading-normal text-gray-800 my-2">{card.description}</p>
+                                <p className="leading-6 text-gray-600 my-2">{card.description}</p>
                             </article>
                         ))
                     }

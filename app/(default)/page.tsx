@@ -10,6 +10,7 @@ import Moderators from '@/components/moderators'
 import Questions from '@/components/questions'
 import Features from '@/components/features'
 import Components from '@/components/components'
+import YtVideo from '@/components/ytvideo'
 
 
 export default function Home() {
@@ -19,6 +20,7 @@ export default function Home() {
       <Features />
       <Components />
       <Testimonials />
+      <YtVideo />
       <Tutors />
       <Moderators />
       <Questions />
