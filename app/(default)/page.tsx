@@ -9,12 +9,15 @@ import Tutors from '@/components/tutors'
 import Moderators from '@/components/moderators'
 import Questions from '@/components/questions'
 import Features from '@/components/features'
+import Components from '@/components/components'
+
 
 export default function Home() {
   return (
     <>
       <Hero />
       <Features />
+      <Components />
       <Testimonials />
       <Tutors />
       <Moderators />

@@ -27,7 +27,7 @@ export default function Features() {
             cards.map((card, index) => (
               <article key={index} className="text-left flex flex-col gap-2 p-6 m-2 bg-white rounded-xl border-gray-300" data-aos="zoom-y-out">
                 <h3 className="font-semibold text-lg">{card.title}</h3>
-                <p className="leading-5 text-gray-600">{card.description}</p>
+                <p className="leading-6 text-gray-600">{card.description}</p>
               </article>
             ))
           }
