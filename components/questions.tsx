@@ -23,7 +23,7 @@ export default function Questions() {
     <>
       <section className='relative py-12 md:py-20'>
         <h2 className="h2 pb-12 md:pb-16 text-center" data-aos="zoom-y-out">Still not convinced? <br /> We’ve got the answers</h2>
-        <div className="max-w-sm md:max-w-4xl mx-auto flex flex-col items-center justify-center border border-[#f5f5f5] bg-[#f5f5f5] rounded-xl p-6">
+        <div data-aos="zoom-y-out" className="max-w-sm md:max-w-4xl mx-auto flex flex-col items-center justify-center border border-[#f5f5f5] bg-[#f5f5f5] rounded-xl p-6">
           <Disclosure>
             <Disclosure.Button className="font-bold text-lg">
               <p>Is the Fundraising School for me?</p>
@@ -106,8 +106,8 @@ export default function Questions() {
         </div>
       </section>
 
-      <section className='relative py-12 md:py-20'>
-        <p className='text-xl text-black max-w-sm md:max-w-4xl mx-auto text-center'>Still have more questions? Contact us <span className='text-[#637ee0]'>info@fundraisingschool.com</span> </p>
+      <section className='relative pb-12 md:pb-20'>
+        <p data-aos="zoom-y-out" className='text-xl text-black max-w-sm md:max-w-4xl mx-auto text-center'>Still have more questions? Contact us <a href='mailto:info@fundraisingschool.com' className='text-[#637ee0]'>info@fundraisingschool.com</a> </p>
       </section>
     </>
   )

@@ -8,17 +8,16 @@ import Testimonials from '@/components/testimonials'
 import Tutors from '@/components/tutors'
 import Moderators from '@/components/moderators'
 import Questions from '@/components/questions'
+import Features from '@/components/features'
 
 export default function Home() {
   return (
     <>
       <Hero />
+      <Features />
       <Testimonials />
       <Tutors />
       <Moderators />
-      {/* <Features /> */}
-      {/* <FeaturesBlocks /> */}
-      {/* <Newsletter /> */}
       <Questions />
     </>
   )
