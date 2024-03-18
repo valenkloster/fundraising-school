@@ -3,6 +3,7 @@
 import { Disclosure, Transition } from '@headlessui/react';
 import { XMarkIcon } from '@heroicons/react/20/solid'
 import clsx from 'clsx';
+import Link from 'next/link';
 
 function Animation({ children }: { children: JSX.Element }) {
   return (
@@ -72,8 +73,8 @@ export default function Questions() {
                 </Disclosure.Button>
 
                 <Animation>
-                  <Disclosure.Panel className="text-gray-800 my-4">
-                    Page of Data Sharing and Privacy Policy
+                  <Disclosure.Panel className="text-[#637ee0] my-4">
+                    <a><Link href={"/data_sharing"}>Data Sharing and Privacy Policy Page</Link></a>
                   </Disclosure.Panel>
                 </Animation>
               </>
@@ -85,7 +86,7 @@ export default function Questions() {
         </div>
       </section>
 
-      <section className='relative pb-12 md:pb-20'>
+      <section className='relative pb-12 md:pb-20 px-4 sm:px-6'>
         <p data-aos="zoom-y-out" className='text-xl text-black max-w-sm md:max-w-4xl mx-auto text-center'>Still have more questions? Contact us <a href='mailto:info@fundraisingschool.com' className='text-[#637ee0]'>info@fundraisingschool.com</a> </p>
       </section>
     </>

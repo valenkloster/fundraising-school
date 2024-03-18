@@ -18,8 +18,8 @@ const cards: Card[] = [
 
 export default function Features() {
   return (
-    <section className="relative text-center py-12 md:py-20 bg-[#f5f5f5]">
-      <div className="max-w-sm md:max-w-4xl mx-auto px-4 sm:px-6">
+    <section className="relative text-center py-12 md:py-20 px-4 sm:px-6 bg-[#f5f5f5]">
+      <div className="max-w-sm md:max-w-4xl mx-auto">
         <h2 className="h2 mb-2" data-aos="zoom-y-out">Unlock your full potential</h2>
         <p className="text-xl text-gray-600 pb-12 md:pb-16" data-aos="zoom-y-out">Elevate your startup journey with tailored masterclasses, tactical expertise and transformative insights, designed to amplify your success in today's competitive business landscape.</p>
         <div className="grid grid-cols-[repeat(auto-fill,minmax(300px,1fr))]">

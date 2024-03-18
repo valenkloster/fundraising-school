@@ -9,7 +9,7 @@ import makers from "@/public/images/startups/makers.png"
 
 export default function Moderators() {
     return (
-        <section className="relative text-center pb-12 md:pb-20 bg-[#f5f5f5]">
+        <section className="relative text-center pb-12 md:pb-20 px-4 sm:px-6 bg-[#f5f5f5]">
             <div className="max-w-sm md:max-w-4xl mx-auto">
                 {/* TITLE */}
                 <h2 className="h2 pb-12 md:pb-16" data-aos="zoom-y-out">Organizers and moderators</h2>
