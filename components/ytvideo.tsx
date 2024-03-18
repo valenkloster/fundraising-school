@@ -13,7 +13,7 @@ const cards: Card[] = [
         description: "Discover the art of valuation that turns heads in the investment world. Our approach helps you not just be a great deal, but the best deal at the table. Find your sweet spot with precision and negotiate from a position of strength."
     },
     {
-        title: 'Funding Fluency, Pitch Perfection, Investment Mastery',
+        title: 'Funding fluency',
         description: "Thrive in a collective of innovators. Our community is your network, sounding board, and support system all in one. Engage in rich, insightful dialogues with entrepreneurs and founders that challenge and champion your pitch, strategy, and growth, ensuring you're investor-ready."
     }
 ]
