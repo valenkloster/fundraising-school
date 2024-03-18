@@ -121,7 +121,7 @@ const Tutors: Tutor[] = [
         srcImageStartUp: upload,
         imageStartUpSize: {
             height: 70,
-            wight: 70
+            wight: 100
         }
     },
     {
