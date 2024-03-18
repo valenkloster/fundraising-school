@@ -74,7 +74,7 @@ export default function Questions() {
 
                 <Animation>
                   <Disclosure.Panel className="text-[#637ee0] my-4">
-                    <a><Link href={"/data_sharing"}>Data Sharing and Privacy Policy Page</Link></a>
+                    <Link href={"/data_sharing"}>Data Sharing and Privacy Policy Page</Link>
                   </Disclosure.Panel>
                 </Animation>
               </>
