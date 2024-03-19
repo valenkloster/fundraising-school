@@ -18,7 +18,7 @@ export default function Hero() {
                 <p className="w-full text-3xl font-bold sm:w-auto text-center">April 25th - May 31st</p>
                 <p className="w-full my-2 text-3xl text-[#d966ed] font-bold sm:w-auto text-center">100% Free</p>
                 <div>
-                  <a className="rounded-3xl btn text-[#637EE0] bg-white border-[#637EE0] hover:text-white hover:bg-[#637EE0] focus:bg-[#3F61AA] focus:text-white duration-150 w-full mb-4 sm:w-auto sm:mb-0" href={Links.JoinLink} target="_blank" rel="noopener">Discover more</a>
+                  <a className="rounded-3xl btn text-[#637EE0] bg-white border-[#637EE0] hover:text-white hover:bg-[#637EE0] focus:bg-[#3F61AA] focus:text-white duration-150 w-full mb-4 px-14 sm:w-auto sm:mb-0" href={Links.JoinLink} target="_blank" rel="noopener">Apply</a>
                 </div>
                 {/* <a className="rounded-3xl btn text-[#d699ed] bg-white border-[#d699ed] border hover:bg-[#d699ed] hover:text-white duration-150 w-full sm:w-auto sm:ml-4" href="#0">Discover More</a> */}
               </div>

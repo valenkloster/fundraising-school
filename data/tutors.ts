@@ -176,7 +176,7 @@ const Tutors: Tutor[] = [
     },
     {
         name: "Keith Ferrazzi",
-        description: "author of \"Never Eat Alone\"",
+        description: "Author of \"Never Eat Alone\"",
         srcImageProfile: keith_ferrazzi_profile,
         srcImageStartUp: green,
         imageStartUpSize: {
