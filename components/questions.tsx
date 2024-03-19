@@ -27,7 +27,7 @@ function QuestionItem({ title, answer }: { title: string, answer: string }) {
         <>
           <Disclosure.Button className="font-bold text-lg text-left flex gap-1 justify-between items-center w-full">
             <p className='block max-w-[90%]'>{title}</p>
-            <XMarkIcon className={clsx("w-5 h-5 rotate-45 transition-all block", open && "rotate-0")} />
+            <XMarkIcon className={clsx("w-5 h-5 transition-transform", open ? "rotate-0" : "rotate-45")} />
           </Disclosure.Button>
 
           <Animation>
@@ -69,7 +69,7 @@ export default function Questions() {
               <>
                 <Disclosure.Button className="font-bold text-lg text-left flex gap-1 justify-between items-center w-full">
                   <p className='block max-w-[90%]'>Data Sharing and Privacy Policy</p>
-                  <XMarkIcon className={clsx("w-5 h-5 rotate-45 transition-all block", open && "rotate-0")} />
+                  <XMarkIcon className={clsx("w-5 h-5 transition-transform", open ? "rotate-0" : "rotate-45")} />
                 </Disclosure.Button>
 
                 <Animation>

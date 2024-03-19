@@ -3,8 +3,10 @@ import andres_bilbao_profile from "@/public/images/tutors/andres_bilbao_profile.
 import laura_gaviria_profile from "@/public/images/tutors/laura_gaviria_profile.png"
 
 import rappi from "@/public/images/startups/rappi.png"
-import b2 from "@/public/images/startups/b2.png"
 import makers from "@/public/images/startups/makers.png"
+import softbank from "@/public/images/startups/softbank.png"
+import faktory from "@/public/images/startups/faktory.png"
+import kauffman_fellows from "@/public/images/startups/kauffman_fellows.webp"
 
 
 export default function Moderators() {
@@ -21,10 +23,14 @@ export default function Moderators() {
                             <h3 className="font-semibold  text-center sm:text-lg sm:text-left">Laura Gaviria Halaby</h3>
                             <ul className="w-[60dvw] sm:w-auto list-disc list-outside marker:text-gray-400 font-light [&>li]:my-1 [&>li]:translate-x-4">
                                 <li>Faktory AI</li>
-                                <li>Ex-SoftBank Founder</li>
-                                <li>SoftBank Operator School</li>
+                                <li>Ex-SoftBank Founder SoftBank Operator School</li>
                                 <li>Kauffman Fellow</li>
                                 <li>Startup Investor and Advisor</li>
+                                <div className="my-4 flex gap-2 flex-wrap">
+                                    <Image src={faktory} alt="image of Faktory AI" width={74} />
+                                    <Image src={softbank} alt="image of Ex-SoftBank" width={90} />
+                                    <Image src={kauffman_fellows} alt="image of Kauffman Fellow" width={96} />
+                                </div>
                             </ul>
                         </div>
                     </div>
@@ -37,9 +43,8 @@ export default function Moderators() {
                             <ul className="w-[60dvw] sm:w-auto list-disc list-outside marker:text-gray-400 font-light [&>li]:my-1 [&>li]:translate-x-4">
                                 <li>Co-founder
                                     <div className="my-4 flex gap-2">
-                                        <Image src={makers} alt="image of Makers" width={32} />
-                                        <Image src={b2} alt="image of B2 Founders" width={32} />
-                                        <Image src={rappi} alt="image of Rappi" width={58} />
+                                        <Image src={makers} alt="image of Makers" width={38} />
+                                        <Image src={rappi} alt="image of Rappi" width={68} />
                                     </div>
                                 </li>
                                 <li>Helped start and fundraise 17 startups in LATAM.</li>

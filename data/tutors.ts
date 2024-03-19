@@ -61,7 +61,7 @@ const Tutors: Tutor[] = [
         srcImageStartUp: habi,
         imageStartUpSize: {
             height: 50,
-            wight: 70
+            wight: 50
         }
     },
     {
@@ -130,7 +130,7 @@ const Tutors: Tutor[] = [
         srcImageProfile: marcelo_claure_profile,
         srcImageStartUp: bicycle,
         imageStartUpSize: {
-            height: 50,
+            height: 80,
             wight: 80
         }
     },

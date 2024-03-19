@@ -1,3 +1,10 @@
+
+export const metadata = {
+    title: 'Data Sharing and Privacy Policy | Fundraising School',
+    description: 'Fuel your LATAM startup at Fundraising School. Master fundraising with expert-led courses on pitch decks and venture capital. Join to accelerate growth, achieve goals, and network with founders. Unleash fundraising expertise for success!',
+}
+
+
 export default function page() {
     return (
         <section className="relative" data-aos="zoom-y-out" data-aos-delay="150">
