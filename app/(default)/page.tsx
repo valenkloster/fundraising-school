@@ -4,7 +4,7 @@ export const metadata = {
 }
 
 import Hero from '@/components/hero'
-import Testimonials from '@/components/sponsors'
+import Sponsors from '@/components/sponsors'
 import Tutors from '@/components/tutors'
 import Moderators from '@/components/moderators'
 import Questions from '@/components/questions'
@@ -19,7 +19,7 @@ export default function Home() {
       <Hero />
       <Features />
       <Components />
-      <Testimonials />
+      <Sponsors />
       <YtVideo />
       <Tutors />
       <Moderators />

@@ -26,7 +26,7 @@ export default function Components() {
     return (
         <section className="relative text-center py-12 md:py-20">
             <div className="max-w-sm md:max-w-4xl mx-auto px-4 sm:px-6">
-                <h2 className="h2 pb-12 md:pb-16" data-aos="zoom-y-out">Designed by entrepreneurs for entrepreneurs</h2>
+                <h2 className="h2 pb-12 md:pb-16" data-aos="zoom-y-out">Masterclassses and Community.</h2>
                 <div className="grid grid-cols-[repeat(auto-fill,minmax(300px,1fr))]">
                     {
                         cards.map((card, index) => (

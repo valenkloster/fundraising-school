@@ -23,7 +23,7 @@ const cards: Card[] = [
 export default function YtVideo() {
     return (
         <>
-            <section className="relative text-center py-12 md:py-20 bg-[#f5f5f5]">
+            {/* <section className="relative text-center py-12 md:py-20 bg-[#f5f5f5]">
                 <div className="max-w-sm md:max-w-4xl mx-auto px-4 sm:px-6">
                     <h2 className="h2 mb-2" data-aos="zoom-y-out">Good-bye to complex startup hassle.</h2>
                     <p className="text-xl text-gray-600 pb-12 md:pb-16" data-aos="zoom-y-out">Say farewell to the complexities of the past and unlock a smoother path to success. Welcome to a new era of fundraising simplicity and efficiency.</p>
@@ -39,7 +39,7 @@ export default function YtVideo() {
                         }
                     </div>
                 </div>
-            </section>
+            </section> */}
             <section className="relative text-center py-12 md:py-20">
                 <div className="max-w-sm md:max-w-4xl mx-auto px-4 sm:px-6 flex flex-col items-center justify-center">
                     <h2 className="h2 mb-2" data-aos="zoom-y-out">Wanna be part of something big?</h2>
