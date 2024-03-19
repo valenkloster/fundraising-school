@@ -8,12 +8,12 @@ export default function Sponsors() {
   return (
     <section className="relative">
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
-        <div className="pb-12 md:pb-20">
+        <div className="py-12 md:py-20">
 
           {/* Section header */}
           <div className="max-w-3xl mx-auto text-center pb-12 md:pb-16">
             {/* <h2 className="h2 mb-4">TTrusted by these partners, our community benefit from more than $50k in deals from the generous companies that support our community</h2> */}
-            <p className="text-xl font-semibold " data-aos="zoom-y-out">Our community benefit from more than $50k in deals from these trusted partners.</p>
+            <p className="text-xl font-semibold " data-aos="zoom-y-out">Our community benefits from over $50k in exclusive deals from these trusted partners:</p>
           </div>
 
           {/* Items */}

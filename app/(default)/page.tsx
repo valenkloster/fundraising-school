@@ -11,6 +11,7 @@ import Questions from '@/components/questions'
 import Features from '@/components/features'
 import Components from '@/components/components'
 import YtVideo from '@/components/ytvideo'
+import FormAirtable from '@/components/FormAirtable'
 
 
 export default function Home() {
@@ -18,8 +19,9 @@ export default function Home() {
     <>
       <Hero />
       <Features />
-      <Components />
+      {/* <Components /> */}
       <Sponsors />
+      <FormAirtable />
       <YtVideo />
       <Tutors />
       <Moderators />
