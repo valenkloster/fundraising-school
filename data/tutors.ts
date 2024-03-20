@@ -27,7 +27,7 @@ import valor from "@/public/images/startups/valor.png"
 import lightspeed from "@/public/images/startups/lightspeed.png"
 import monashees from "@/public/images/startups/monashees.png"
 import upload from "@/public/images/startups/upload.png"
-import bicycle from "@/public/images/startups/bicycle.png"
+import claure_group from "@/public/images/startups/claure_group.png"
 import logo_500 from "@/public/images/startups/500.png"
 import hk from "@/public/images/startups/hk.png"
 import green from "@/public/images/startups/green.png"
@@ -126,9 +126,9 @@ const Tutors: Tutor[] = [
     },
     {
         name: "Marcelo Claure",
-        description: "Chairman and Managing Partner",
+        description: "Founder & CEO",
         srcImageProfile: marcelo_claure_profile,
-        srcImageStartUp: bicycle,
+        srcImageStartUp: claure_group,
         imageStartUpSize: {
             height: 80,
             wight: 80

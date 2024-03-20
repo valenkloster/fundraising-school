@@ -9,7 +9,6 @@ import Tutors from '@/components/tutors'
 import Moderators from '@/components/moderators'
 import Questions from '@/components/questions'
 import Features from '@/components/features'
-import Components from '@/components/components'
 import YtVideo from '@/components/ytvideo'
 import FormAirtable from '@/components/FormAirtable'
 
@@ -19,12 +18,11 @@ export default function Home() {
     <>
       <Hero />
       <Features />
-      {/* <Components /> */}
+      <Tutors />
+      <Moderators />
       <Sponsors />
       <FormAirtable />
       <YtVideo />
-      <Tutors />
-      <Moderators />
       <Questions />
     </>
   )

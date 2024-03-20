@@ -47,7 +47,7 @@ export default function Questions() {
     <>
       <section className='relative py-12 md:py-20 px-4 sm:px-6'>
         <h2 className="h2 pb-12 md:pb-16 text-center" data-aos="zoom-y-out">Still not convinced? <br /> We’ve got the answers</h2>
-        <div data-aos="zoom-y-out" className="max-w-sm md:max-w-4xl mx-auto border border-[#f5f5f5] bg-[#f5f5f5] rounded-xl p-6">
+        <div data-aos="zoom-y-out" className="max-w-4xl mx-auto border border-[#f5f5f5] bg-[#f5f5f5] rounded-xl p-6">
 
           <QuestionItem title='Is the Fundraising School for me?' answer="If you are an early-stage startup looking for guidance on fundraising fundamentals, practical insights, curated content, a community of founders in a similar stage, and support, this is an opportunity you don't want to miss out on." />
           <hr className="my-4 w-full border-gray-300" />
@@ -87,7 +87,7 @@ export default function Questions() {
       </section>
 
       <section className='relative pb-12 md:pb-20 px-4 sm:px-6'>
-        <p data-aos="zoom-y-out" className='text-xl text-black max-w-sm md:max-w-4xl mx-auto text-center'>Still have more questions? Contact us <a href='mailto:info@fundraisingschool.com' className='text-[#637ee0]'>info@fundraisingschool.com</a> </p>
+        <p data-aos="zoom-y-out" className='text-xl text-black max-w-4xl mx-auto text-center'>Still have more questions? Contact us <a href='mailto:info@fundraisingschool.com' className='text-[#637ee0]'>info@fundraisingschool.com</a> </p>
       </section>
     </>
   )

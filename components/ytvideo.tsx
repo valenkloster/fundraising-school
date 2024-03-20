@@ -41,7 +41,7 @@ export default function YtVideo() {
                 </div>
             </section> */}
             <section className="relative text-center py-12 md:py-20">
-                <div className="max-w-sm md:max-w-4xl mx-auto px-4 sm:px-6 flex flex-col items-center justify-center">
+                <div className="max-w-4xl mx-auto px-4 sm:px-6 flex flex-col items-center justify-center">
                     <h2 className="h2 mb-2" data-aos="zoom-y-out">Wanna be part of something big?</h2>
                     <p className="text-xl text-gray-600 pb-12 md:pb-16" data-aos="zoom-y-out">You will receive personalized advice to learn how to actually get funded.</p>
                     <div className="relative block w-full h-0 pb-[56.25%]">
