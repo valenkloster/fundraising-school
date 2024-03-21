@@ -65,16 +65,16 @@ export default function MobileMenu() {
         >
           <ul className="px-5 py-2">
             <li>
-              <Link href="/#about" onClick={() => setMobileNavOpen(false)} className="font-medium text-gray-600 hover:text-gray-900 px-5 py-3 flex items-center transition duration-150 ease-in-out">About</Link>
+              <Link href="/#about" scroll={false} onClick={() => setMobileNavOpen(false)} className="font-medium text-gray-600 hover:text-gray-900 px-5 py-3 flex items-center transition duration-150 ease-in-out">About</Link>
             </li>
             <li>
-              <Link href="/#speakers" onClick={() => setMobileNavOpen(false)} className="font-medium text-gray-600 hover:text-gray-900 px-5 py-3 flex items-center transition duration-150 ease-in-out">Speakers</Link>
+              <Link href="/#speakers" scroll={false} onClick={() => setMobileNavOpen(false)} className="font-medium text-gray-600 hover:text-gray-900 px-5 py-3 flex items-center transition duration-150 ease-in-out">Speakers</Link>
             </li>
             <li>
-              <Link href="/#curriculum" onClick={() => setMobileNavOpen(false)} className="font-medium text-gray-600 hover:text-gray-900 px-5 py-3 flex items-center transition duration-150 ease-in-out">Curriculum</Link>
+              <Link href="/#curriculum" scroll={false} onClick={() => setMobileNavOpen(false)} className="font-medium text-gray-600 hover:text-gray-900 px-5 py-3 flex items-center transition duration-150 ease-in-out">Curriculum</Link>
             </li>
             <li>
-              <Link href="/#questions" onClick={() => setMobileNavOpen(false)} className="font-medium text-gray-600 hover:text-gray-900 px-5 py-3 flex items-center transition duration-150 ease-in-out">Q&A</Link>
+              <Link href="/#questions" scroll={false} onClick={() => setMobileNavOpen(false)} className="font-medium text-gray-600 hover:text-gray-900 px-5 py-3 flex items-center transition duration-150 ease-in-out">Q&A</Link>
             </li>
           </ul>
         </Transition>

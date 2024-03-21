@@ -36,6 +36,36 @@ import llyc from "@/public/images/startups/llyc.jpeg"
 
 const Speakers: Speaker[] = [
     {
+        name: "Brynne McNulty",
+        description: "Founder & CEO",
+        srcImageProfile: brynne_mcnulty_profile,
+        srcImageStartUp: habi,
+        imageStartUpSize: {
+            height: 50,
+            wight: 50
+        }
+    },
+    {
+        name: "Mercedes Bent",
+        description: "Partner",
+        srcImageProfile: mercedes_bent_profile,
+        srcImageStartUp: lightspeed,
+        imageStartUpSize: {
+            height: 50,
+            wight: 140
+        }
+    },
+    {
+        name: "Courtney Powell",
+        description: "Managing Partner & COO",
+        srcImageProfile: courtney_powell_profile,
+        srcImageStartUp: logo_500,
+        imageStartUpSize: {
+            height: 50,
+            wight: 140
+        }
+    },
+    {
         name: "David Vélez",
         description: "Founder & CEO",
         srcImageProfile: david_velez_profile,
@@ -56,23 +86,13 @@ const Speakers: Speaker[] = [
         }
     },
     {
-        name: "Brynne McNulty",
+        name: "Marcelo Claure",
         description: "Founder & CEO",
-        srcImageProfile: brynne_mcnulty_profile,
-        srcImageStartUp: habi,
+        srcImageProfile: marcelo_claure_profile,
+        srcImageStartUp: claure_group,
         imageStartUpSize: {
-            height: 50,
-            wight: 50
-        }
-    },
-    {
-        name: "Mike Maples, Jr",
-        description: "Managing Partner",
-        srcImageProfile: mike_maples_jr_profile,
-        srcImageStartUp: floodgate,
-        imageStartUpSize: {
-            height: 50,
-            wight: 140
+            height: 80,
+            wight: 80
         }
     },
     {
@@ -96,6 +116,16 @@ const Speakers: Speaker[] = [
         }
     },
     {
+        name: "Mike Maples, Jr",
+        description: "Managing Partner",
+        srcImageProfile: mike_maples_jr_profile,
+        srcImageStartUp: floodgate,
+        imageStartUpSize: {
+            height: 50,
+            wight: 140
+        }
+    },
+    {
         name: "Carlo Dapuzzo",
         description: "General Partner",
         srcImageProfile: carlos_dapuzzo_profile,
@@ -106,13 +136,13 @@ const Speakers: Speaker[] = [
         }
     },
     {
-        name: "Mercedes Bent",
-        description: "Partner",
-        srcImageProfile: mercedes_bent_profile,
-        srcImageStartUp: lightspeed,
+        name: "Connie Grossi",
+        description: "Leadership & Talent Advisor",
+        srcImageProfile: connie_grossi_profile,
+        srcImageStartUp: leadership_advisor,
         imageStartUpSize: {
-            height: 50,
-            wight: 140
+            height: 68,
+            wight: 68
         }
     },
     {
@@ -123,26 +153,6 @@ const Speakers: Speaker[] = [
         imageStartUpSize: {
             height: 70,
             wight: 100
-        }
-    },
-    {
-        name: "Marcelo Claure",
-        description: "Founder & CEO",
-        srcImageProfile: marcelo_claure_profile,
-        srcImageStartUp: claure_group,
-        imageStartUpSize: {
-            height: 80,
-            wight: 80
-        }
-    },
-    {
-        name: "Courtney Powell",
-        description: "Managing Partner & COO",
-        srcImageProfile: courtney_powell_profile,
-        srcImageStartUp: logo_500,
-        imageStartUpSize: {
-            height: 50,
-            wight: 140
         }
     },
     {
@@ -183,16 +193,6 @@ const Speakers: Speaker[] = [
         imageStartUpSize: {
             height: 70,
             wight: 140
-        }
-    },
-    {
-        name: "Connie Grossi",
-        description: "Leadership & Talent Advisor",
-        srcImageProfile: connie_grossi_profile,
-        srcImageStartUp: leadership_advisor,
-        imageStartUpSize: {
-            height: 68,
-            wight: 68
         }
     },
 ]
