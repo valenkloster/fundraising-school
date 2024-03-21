@@ -65,16 +65,16 @@ export default function MobileMenu() {
         >
           <ul className="px-5 py-2">
             <li>
-              <Link href="/#about" scroll={false} onClick={() => setMobileNavOpen(false)} className="font-medium text-gray-600 hover:text-gray-900 px-5 py-3 flex items-center transition duration-150 ease-in-out">About</Link>
+              <a href="/#about" onClick={() => setMobileNavOpen(false)} className="font-medium text-gray-600 hover:text-gray-900 px-5 py-3 flex items-center transition duration-150 ease-in-out">About</a>
             </li>
             <li>
-              <Link href="/#speakers" scroll={false} onClick={() => setMobileNavOpen(false)} className="font-medium text-gray-600 hover:text-gray-900 px-5 py-3 flex items-center transition duration-150 ease-in-out">Speakers</Link>
+              <a href="/#speakers" onClick={() => setMobileNavOpen(false)} className="font-medium text-gray-600 hover:text-gray-900 px-5 py-3 flex items-center transition duration-150 ease-in-out">Speakers</a>
             </li>
             <li>
-              <Link href="/#curriculum" scroll={false} onClick={() => setMobileNavOpen(false)} className="font-medium text-gray-600 hover:text-gray-900 px-5 py-3 flex items-center transition duration-150 ease-in-out">Curriculum</Link>
+              <a href="/#curriculum" onClick={() => setMobileNavOpen(false)} className="font-medium text-gray-600 hover:text-gray-900 px-5 py-3 flex items-center transition duration-150 ease-in-out">Curriculum</a>
             </li>
             <li>
-              <Link href="/#questions" scroll={false} onClick={() => setMobileNavOpen(false)} className="font-medium text-gray-600 hover:text-gray-900 px-5 py-3 flex items-center transition duration-150 ease-in-out">Q&A</Link>
+              <a href="/#questions" onClick={() => setMobileNavOpen(false)} className="font-medium text-gray-600 hover:text-gray-900 px-5 py-3 flex items-center transition duration-150 ease-in-out">Q&A</a>
             </li>
           </ul>
         </Transition>

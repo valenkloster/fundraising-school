@@ -38,16 +38,16 @@ export default function Header() {
             <ul className="flex grow justify-end flex-wrap items-center">
 
               <li>
-                <Link href="/#about" scroll={false} className="font-medium text-gray-600 hover:text-gray-900 px-5 py-3 flex items-center transition duration-150 ease-in-out">About</Link>
+                <a href="/#about" className="font-medium text-gray-600 hover:text-gray-900 px-5 py-3 flex items-center transition duration-150 ease-in-out">About</a>
               </li>
               <li>
-                <Link href="/#speakers" scroll={false} className="font-medium text-gray-600 hover:text-gray-900 px-5 py-3 flex items-center transition duration-150 ease-in-out">Speakers</Link>
+                <a href="/#speakers" className="font-medium text-gray-600 hover:text-gray-900 px-5 py-3 flex items-center transition duration-150 ease-in-out">Speakers</a>
               </li>
               <li>
-                <Link href="/#curriculum" scroll={false} className="font-medium text-gray-600 hover:text-gray-900 px-5 py-3 flex items-center transition duration-150 ease-in-out">Curriculum</Link>
+                <a href="/#curriculum" className="font-medium text-gray-600 hover:text-gray-900 px-5 py-3 flex items-center transition duration-150 ease-in-out">Curriculum</a>
               </li>
               <li>
-                <Link href="/#questions" scroll={false} className="font-medium text-gray-600 hover:text-gray-900 px-5 py-3 flex items-center transition duration-150 ease-in-out">Q&A</Link>
+                <a href="/#questions" className="font-medium text-gray-600 hover:text-gray-900 px-5 py-3 flex items-center transition duration-150 ease-in-out">Q&A</a>
               </li>
 
               {/* <li>
