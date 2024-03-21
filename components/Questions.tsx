@@ -45,7 +45,7 @@ function QuestionItem({ title, answer }: { title: string, answer: string }) {
 export default function Questions() {
   return (
     <>
-      <section className='relative py-12 md:py-20 px-4 sm:px-6'>
+      <section id="questions" className='relative py-12 md:py-20 px-4 sm:px-6'>
         <h2 className="h2 pb-12 md:pb-16 text-center" data-aos="zoom-y-out">Still not convinced? <br /> We’ve got the answers</h2>
         <div data-aos="zoom-y-out" className="max-w-4xl mx-auto border border-[#f5f5f5] bg-[#f5f5f5] rounded-xl p-6">
 

@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import ontop from '@/public/images/partners/ontop.png'
+import onTop from '@/public/images/partners/onTop.png'
 import faktory from '@/public/images/startups/faktory.png'
 import truora from '@/public/images/partners/truora.png'
 import azure from '@/public/images/partners/azure.png'
@@ -21,7 +21,7 @@ export default function Sponsors() {
 
             {/* Item OnTop */}
             <div data-aos="zoom-y-out" className="flex items-center justify-center py-2 col-span-2 md:col-auto">
-              <Image src={ontop} alt='Logo of OnTop' width={120} />
+              <Image src={onTop} alt='Logo of OnTop' width={120} />
             </div>
 
             {/* Item Faktory */}

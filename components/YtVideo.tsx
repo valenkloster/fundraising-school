@@ -1,3 +1,5 @@
+import { Links } from "@/data/enums"
+
 type Card = {
     title: string,
     description: string,
@@ -17,8 +19,6 @@ const cards: Card[] = [
         description: "Thrive in a collective of innovators. Our community is your network, sounding board, and support system all in one. Engage in rich, insightful dialogues with entrepreneurs and founders that challenge and champion your pitch, strategy, and growth, ensuring you're investor-ready."
     }
 ]
-
-
 
 export default function YtVideo() {
     return (
@@ -40,15 +40,17 @@ export default function YtVideo() {
                     </div>
                 </div>
             </section> */}
-            <section className="relative text-center py-12 md:py-20">
+            <section className="relative text-center py-12 md:py-20 bg-[#f5f5f5]">
                 <div className="max-w-4xl mx-auto px-4 sm:px-6 flex flex-col items-center justify-center">
                     <h2 className="h2 mb-2" data-aos="zoom-y-out">Wanna be part of something big?</h2>
                     <p className="text-xl text-gray-600 pb-12 md:pb-16" data-aos="zoom-y-out">You will receive personalized advice to learn how to actually get funded.</p>
-                    <div className="relative block w-full h-0 pb-[56.25%]">
+                    <div className="relative block w-full h-0 pb-[56.25%] mb-12 md:mb-16">
                         <iframe className="absolute left-0 top-0 w-full h-full" src="https://www.youtube.com/embed/1R5-cTsDS-8?si=jQ6gCnYLwsX351rK" frameBorder={0} title="YouTube video player" allowFullScreen></iframe>
                     </div>
+                    <a className="rounded-3xl btn text-[#637EE0] bg-white border-[#637EE0] hover:text-white hover:bg-[#637EE0] focus:bg-[#3F61AA] focus:text-white duration-150 w-full mb-4 px-24 sm:w-auto sm:mb-0" href={Links.JoinLink} target="_blank" rel="noopener">Apply</a>
+
                 </div>
-            </section>
+            </section >
         </>
     )
 }

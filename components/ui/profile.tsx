@@ -1,8 +1,8 @@
 import Image from "next/image"
-import { Tutor } from "@/models/tutor"
+import { Speaker } from "@/models/speaker"
 
 
-export default function Profile({ profile }: { profile: Tutor }) {
+export default function Profile({ profile }: { profile: Speaker }) {
     return (
         <article className="flex flex-col items-center mx-auto h-[360px] max-w-[200px]" data-aos="zoom-y-out">
             <Image src={profile.srcImageProfile} alt={`Picture of ${profile.name}`} width={180} height={180} />

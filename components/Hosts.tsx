@@ -6,10 +6,9 @@ import rappi from "@/public/images/startups/rappi.png"
 import makers from "@/public/images/startups/makers.png"
 import softbank from "@/public/images/startups/softbank.png"
 import faktory from "@/public/images/startups/faktory.png"
-import kauffman_fellows from "@/public/images/startups/kauffman_fellows.webp"
 
 
-export default function Moderators() {
+export default function Hosts() {
     return (
         <section className="relative text-center pb-12 md:pb-20 px-4 sm:px-6 bg-[#f5f5f5]">
             <div className="max-w-4xl mx-auto">
@@ -28,7 +27,6 @@ export default function Moderators() {
                                 <div className="my-4 flex gap-2 flex-wrap translate-x-4">
                                     <Image src={faktory} alt="image of Faktory AI" width={80} />
                                     <Image src={softbank} alt="image of Ex-SoftBank" width={110} />
-                                    {/* <Image src={kauffman_fellows} alt="image of Kauffman Fellow" width={96} /> */}
                                 </div>
                             </ul>
                         </div>

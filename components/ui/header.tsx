@@ -36,6 +36,20 @@ export default function Header() {
           <nav className="hidden md:flex md:grow">
             {/* Desktop sign in links */}
             <ul className="flex grow justify-end flex-wrap items-center">
+
+              <li>
+                <Link href="/#about" className="font-medium text-gray-600 hover:text-gray-900 px-5 py-3 flex items-center transition duration-150 ease-in-out">About</Link>
+              </li>
+              <li>
+                <Link href="/#speakers" className="font-medium text-gray-600 hover:text-gray-900 px-5 py-3 flex items-center transition duration-150 ease-in-out">Speakers</Link>
+              </li>
+              <li>
+                <Link href="/#curriculum" className="font-medium text-gray-600 hover:text-gray-900 px-5 py-3 flex items-center transition duration-150 ease-in-out">Curriculum</Link>
+              </li>
+              <li>
+                <Link href="/#questions" className="font-medium text-gray-600 hover:text-gray-900 px-5 py-3 flex items-center transition duration-150 ease-in-out">Q&A</Link>
+              </li>
+
               {/* <li>
                 <Link href="/signin" className="font-medium text-gray-600 hover:text-gray-900 px-5 py-3 flex items-center transition duration-150 ease-in-out">Sign in</Link>
               </li>
@@ -51,7 +65,7 @@ export default function Header() {
 
           </nav>
 
-          {/* <MobileMenu /> */}
+          <MobileMenu />
 
         </div>
       </div>

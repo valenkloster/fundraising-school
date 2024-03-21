@@ -1,4 +1,4 @@
-import { Tutor } from "@/models/tutor"
+import type { Speaker } from "@/models/speaker"
 
 import simon_borrero_profile from "@/public/images/tutors/simon_borrero_profile.png"
 import david_velez_profile from "@/public/images/tutors/david_velez_profile.png"
@@ -15,7 +15,7 @@ import keith_ferrazzi_profile from "@/public/images/tutors/keith_ferrazzi_profil
 import marcelo_claure_profile from "@/public/images/tutors/marcelo_claure_profile.png"
 import mike_maples_jr_profile from "@/public/images/tutors/mike_maples_jr_profile.png"
 import rodrigo_baer_profile from "@/public/images/tutors/rodrigo_baer_profile.png"
-
+import connie_grossi_profile from "@/public/images/tutors/connie_grossi_profile.png"
 
 import nubank from "@/public/images/startups/nubank.png"
 import rappi from "@/public/images/startups/rappi.png"
@@ -31,9 +31,10 @@ import claure_group from "@/public/images/startups/claure_group.png"
 import logo_500 from "@/public/images/startups/500.png"
 import hk from "@/public/images/startups/hk.png"
 import green from "@/public/images/startups/green.png"
+import leadership_advisor from "@/public/images/startups/leadership_advisor.png"
 import llyc from "@/public/images/startups/llyc.jpeg"
 
-const Tutors: Tutor[] = [
+const Speakers: Speaker[] = [
     {
         name: "David Vélez",
         description: "Founder & CEO",
@@ -184,6 +185,16 @@ const Tutors: Tutor[] = [
             wight: 140
         }
     },
+    {
+        name: "Connie Grossi",
+        description: "Leadership & Talent Advisor",
+        srcImageProfile: connie_grossi_profile,
+        srcImageStartUp: leadership_advisor,
+        imageStartUpSize: {
+            height: 68,
+            wight: 68
+        }
+    },
 ]
 
-export default Tutors
+export default Speakers

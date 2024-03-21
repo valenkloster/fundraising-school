@@ -5,7 +5,7 @@ type ImageSize = {
     wight: number
 }
 
-export type Tutor = {
+export type Speaker = {
     srcImageStartUp: string | StaticImport,
     imageStartUpSize: ImageSize,
     srcImageProfile: string | StaticImport,

@@ -3,14 +3,13 @@ export const metadata = {
   description: 'Fuel your LATAM startup at Fundraising School. Master fundraising with expert-led courses on pitch decks and venture capital. Join to accelerate growth, achieve goals, and network with founders. Unleash fundraising expertise for success!',
 }
 
-import Hero from '@/components/hero'
-import Sponsors from '@/components/sponsors'
-import Tutors from '@/components/tutors'
-import Moderators from '@/components/moderators'
-import Questions from '@/components/questions'
-import Features from '@/components/features'
-import YtVideo from '@/components/ytvideo'
-import FormAirtable from '@/components/FormAirtable'
+import Hero from '@/components/Hero'
+import Sponsors from '@/components/Sponsors'
+import Speakers from '@/components/Speakers'
+import Hosts from '@/components/Hosts'
+import Questions from '@/components/Questions'
+import Features from '@/components/Features'
+import YtVideo from '@/components/YtVideo'
 
 
 export default function Home() {
@@ -18,10 +17,9 @@ export default function Home() {
     <>
       <Hero />
       <Features />
-      <Tutors />
-      <Moderators />
+      <Speakers />
+      <Hosts />
       <Sponsors />
-      <FormAirtable />
       <YtVideo />
       <Questions />
     </>
