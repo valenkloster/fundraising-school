@@ -2,7 +2,7 @@ import { StaticImport } from "next/dist/shared/lib/get-img-props"
 
 type ImageSize = {
     height: number,
-    wight: number
+    width: number
 }
 
 export type Speaker = {

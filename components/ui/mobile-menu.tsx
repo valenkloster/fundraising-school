@@ -68,7 +68,7 @@ export default function MobileMenu() {
               <a href="/#about" onClick={() => setMobileNavOpen(false)} className="font-medium text-gray-600 hover:text-gray-900 px-5 py-3 flex items-center transition duration-150 ease-in-out">About</a>
             </li>
             <li>
-              <a href="/#speakers" onClick={() => setMobileNavOpen(false)} className="font-medium text-gray-600 hover:text-gray-900 px-5 py-3 flex items-center transition duration-150 ease-in-out">Speakers</a>
+              <a href="/#speakers" onClick={() => setMobileNavOpen(false)} className="font-medium text-gray-600 hover:text-gray-900 px-5 py-3 flex items-center transition duration-150 ease-in-out">Speakers & Mentors</a>
             </li>
             <li>
               <a href="/#curriculum" onClick={() => setMobileNavOpen(false)} className="font-medium text-gray-600 hover:text-gray-900 px-5 py-3 flex items-center transition duration-150 ease-in-out">Curriculum</a>

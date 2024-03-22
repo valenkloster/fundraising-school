@@ -42,7 +42,7 @@ const Speakers: Speaker[] = [
         srcImageStartUp: habi,
         imageStartUpSize: {
             height: 50,
-            wight: 50
+            width: 50
         }
     },
     {
@@ -52,7 +52,7 @@ const Speakers: Speaker[] = [
         srcImageStartUp: lightspeed,
         imageStartUpSize: {
             height: 50,
-            wight: 140
+            width: 140
         }
     },
     {
@@ -62,7 +62,7 @@ const Speakers: Speaker[] = [
         srcImageStartUp: logo_500,
         imageStartUpSize: {
             height: 50,
-            wight: 140
+            width: 140
         }
     },
     {
@@ -72,7 +72,7 @@ const Speakers: Speaker[] = [
         srcImageStartUp: nubank,
         imageStartUpSize: {
             height: 50,
-            wight: 60
+            width: 60
         }
     },
     {
@@ -82,7 +82,7 @@ const Speakers: Speaker[] = [
         srcImageStartUp: rappi,
         imageStartUpSize: {
             height: 50,
-            wight: 70
+            width: 70
         }
     },
     {
@@ -92,7 +92,7 @@ const Speakers: Speaker[] = [
         srcImageStartUp: claure_group,
         imageStartUpSize: {
             height: 80,
-            wight: 80
+            width: 80
         }
     },
     {
@@ -102,7 +102,7 @@ const Speakers: Speaker[] = [
         srcImageStartUp: kaszek,
         imageStartUpSize: {
             height: 50,
-            wight: 100
+            width: 100
         }
     },
     {
@@ -112,7 +112,7 @@ const Speakers: Speaker[] = [
         srcImageStartUp: valor,
         imageStartUpSize: {
             height: 50,
-            wight: 100
+            width: 100
         }
     },
     {
@@ -122,7 +122,7 @@ const Speakers: Speaker[] = [
         srcImageStartUp: floodgate,
         imageStartUpSize: {
             height: 50,
-            wight: 140
+            width: 140
         }
     },
     {
@@ -132,7 +132,7 @@ const Speakers: Speaker[] = [
         srcImageStartUp: monashees,
         imageStartUpSize: {
             height: 50,
-            wight: 140
+            width: 140
         }
     },
     {
@@ -142,7 +142,7 @@ const Speakers: Speaker[] = [
         srcImageStartUp: leadership_advisor,
         imageStartUpSize: {
             height: 68,
-            wight: 68
+            width: 68
         }
     },
     {
@@ -152,7 +152,7 @@ const Speakers: Speaker[] = [
         srcImageStartUp: upload,
         imageStartUpSize: {
             height: 70,
-            wight: 100
+            width: 100
         }
     },
     {
@@ -162,7 +162,7 @@ const Speakers: Speaker[] = [
         srcImageStartUp: hk,
         imageStartUpSize: {
             height: 50,
-            wight: 170
+            width: 170
         }
     },
     {
@@ -172,7 +172,7 @@ const Speakers: Speaker[] = [
         srcImageStartUp: a16z,
         imageStartUpSize: {
             height: 45,
-            wight: 45
+            width: 45
         }
     },
     {
@@ -182,7 +182,7 @@ const Speakers: Speaker[] = [
         srcImageStartUp: llyc,
         imageStartUpSize: {
             height: 45,
-            wight: 45
+            width: 45
         }
     },
     {
@@ -192,7 +192,7 @@ const Speakers: Speaker[] = [
         srcImageStartUp: green,
         imageStartUpSize: {
             height: 70,
-            wight: 140
+            width: 140
         }
     },
 ]

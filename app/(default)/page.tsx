@@ -11,6 +11,7 @@ import Questions from '@/components/Questions'
 import Features from '@/components/Features'
 import YtVideo from '@/components/YtVideo'
 import Curriculum from '@/components/Curriculum'
+import Mentors from '@/components/Mentors'
 
 
 export default function Home() {
@@ -19,6 +20,7 @@ export default function Home() {
       <Hero />
       <Features />
       <Speakers />
+      <Mentors />
       <Hosts />
       <Curriculum />
       <Sponsors />
