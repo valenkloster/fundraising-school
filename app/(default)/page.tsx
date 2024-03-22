@@ -10,6 +10,7 @@ import Hosts from '@/components/Hosts'
 import Questions from '@/components/Questions'
 import Features from '@/components/Features'
 import YtVideo from '@/components/YtVideo'
+import Curriculum from '@/components/Curriculum'
 
 
 export default function Home() {
@@ -20,6 +21,7 @@ export default function Home() {
       <Speakers />
       <Hosts />
       <Sponsors />
+      <Curriculum />
       <YtVideo />
       <Questions />
     </>
