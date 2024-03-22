@@ -177,7 +177,7 @@ const Speakers: Speaker[] = [
     },
     {
         name: "Juan Felipe Muñoz",
-        description: "CEO",
+        description: "Partner",
         srcImageProfile: juan_felipe_muñoz_profile,
         srcImageStartUp: britten,
         imageStartUpSize: {
