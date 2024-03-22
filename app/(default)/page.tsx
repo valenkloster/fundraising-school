@@ -20,8 +20,8 @@ export default function Home() {
       <Features />
       <Speakers />
       <Hosts />
-      <Sponsors />
       <Curriculum />
+      <Sponsors />
       <YtVideo />
       <Questions />
     </>
