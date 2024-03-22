@@ -32,7 +32,7 @@ import logo_500 from "@/public/images/startups/500.png"
 import hk from "@/public/images/startups/hk.png"
 import green from "@/public/images/startups/green.png"
 import leadership_advisor from "@/public/images/startups/leadership_advisor.png"
-import llyc from "@/public/images/startups/llyc.jpeg"
+import britten from "@/public/images/startups/britten.png"
 
 const Speakers: Speaker[] = [
     {
@@ -179,10 +179,10 @@ const Speakers: Speaker[] = [
         name: "Juan Felipe Muñoz",
         description: "CEO",
         srcImageProfile: juan_felipe_muñoz_profile,
-        srcImageStartUp: llyc,
+        srcImageStartUp: britten,
         imageStartUpSize: {
-            height: 45,
-            width: 45
+            height: 60,
+            width: 100
         }
     },
     {

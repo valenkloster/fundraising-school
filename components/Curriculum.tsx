@@ -25,9 +25,9 @@ export default function Curriculum() {
 
     return (
         <section id='curriculum' className='relative text-center py-12 md:py-20 px-4 sm:px-6'>
-            <div className="max-w-4xl mx-auto">
+            <div className="max-w-4xl mx-auto" data-aos="zoom-y-out">
                 <h2 className="h2 mb-2" data-aos="zoom-y-out"> Curriculum </h2>
-                <Image src={image} alt={""} priority />
+                <Image src={image} alt={"Image with the curriculum of fundraising school"} priority />
             </div>
         </section>
     )
