@@ -19,9 +19,9 @@ export default function Home() {
     <>
       <Hero />
       <Features />
+      <Hosts />
       <Speakers />
       <Mentors />
-      <Hosts />
       <Curriculum />
       <Sponsors />
       <YtVideo />

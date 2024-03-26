@@ -13,7 +13,7 @@ export default function Hosts() {
         <section className="relative text-center pb-12 md:pb-20 px-4 sm:px-6 bg-[#f5f5f5]">
             <div className="max-w-4xl mx-auto">
                 {/* TITLE */}
-                <h2 className="h2 pb-12 md:pb-16" data-aos="zoom-y-out">Hosts</h2>
+                <h2 className="h2 pb-12 md:pb-16" data-aos="zoom-y-out">Hosts And Coaches</h2>
                 <div className="mx-auto grid grid-cols-1 md:grid-cols-2">
                     {/* First Item */}
                     <article className="max-w-[280px] md:max-w-[400px] mx-auto flex flex-col md:flex-row justify-center sm:justify-normal items-center sm:items-start" data-aos="zoom-y-out">
