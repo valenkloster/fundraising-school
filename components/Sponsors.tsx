@@ -3,6 +3,7 @@ import onTop from '@/public/images/partners/onTop.png'
 import faktory from '@/public/images/startups/faktory.png'
 import truora from '@/public/images/partners/truora.png'
 import azure from '@/public/images/partners/azure.png'
+import mention from '@/public/images/partners/mention.png'
 
 export default function Sponsors() {
   return (
@@ -17,11 +18,16 @@ export default function Sponsors() {
           </div>
 
           {/* Items */}
-          <div className="max-w-4xl mx-auto grid gap-2 grid-cols-4 [&>div>img]:grayscale ">
+          <div className="max-w-4xl mx-auto grid gap-2 grid-cols-5 [&>div>img]:grayscale">
 
             {/* Item OnTop */}
             <div data-aos="zoom-y-out" className="flex items-center justify-center py-2 col-span-2 md:col-auto">
               <Image src={onTop} alt='Logo of OnTop' width={120} />
+            </div>
+
+            {/* Item Mention */}
+            <div data-aos="zoom-y-out" className="flex items-center justify-center py-2 col-span-2 md:col-auto">
+              <Image src={mention} alt='Logo of Mention' width={120} />
             </div>
 
             {/* Item Faktory */}

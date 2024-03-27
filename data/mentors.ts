@@ -28,56 +28,6 @@ import outliersvc from "@/public/images/startups/outliersvc.jpeg"
 
 const Mentors: Speaker[] = [
     {
-        name: 'Diego Galvez',
-        description: 'Founder',
-        srcImageProfile: diego_galvez_profile,
-        srcImageStartUp: mexOpp,
-        imageStartUpSize: {
-            height: 70,
-            width: 120
-        },
-    },
-    {
-        name: 'Laura Gonzalez',
-        description: 'CBO Strategic Growth',
-        srcImageProfile: laura_gonzalez_profile,
-        srcImageStartUp: stays,
-        imageStartUpSize: {
-            height: 60,
-            width: 60
-        },
-    },
-    {
-        name: 'Freddy Vega',
-        description: 'Founder and CEO',
-        srcImageProfile: freddy_vega_profile,
-        srcImageStartUp: platzi,
-        imageStartUpSize: {
-            height: 60,
-            width: 110
-        },
-    },
-    {
-        name: 'Daniela Alvarez',
-        description: 'Angel Investments',
-        srcImageProfile: daniela_alvarez_profile,
-        srcImageStartUp: nazca,
-        imageStartUpSize: {
-            height: 60,
-            width: 140
-        },
-    },
-    {
-        name: 'Christian Van Der Henst',
-        description: 'Co-founder and President',
-        srcImageProfile: christian_van_der_henst_profile,
-        srcImageStartUp: platzi,
-        imageStartUpSize: {
-            height: 60,
-            width: 110
-        },
-    },
-    {
         name: 'Javier Villamizar',
         description: 'Operating Partner',
         srcImageProfile: javier_villamizar_profile,
@@ -88,41 +38,10 @@ const Mentors: Speaker[] = [
         },
     },
     {
-        name: 'Ana Cristina Gadala',
-        description: 'Early stage fintech investor',
-        srcImageProfile: ana_cristina_gadala_profile,
-        srcImageStartUp: qed_investors,
-        imageStartUpSize: {
-            height: 50,
-            width: 50
-        },
-    },
-    {
-        name: 'Cristina Kenna',
-        description: 'Partner',
-        srcImageProfile: cristina_kenna_profile,
-        srcImageStartUp: ignia,
-        imageStartUpSize: {
-            height: 60,
-            width: 110
-        },
-    },
-
-    {
         name: 'Karla Berman',
         description: 'Shark Tank México',
         srcImageProfile: karla_berman_profile,
         srcImageStartUp: shark_tank,
-        imageStartUpSize: {
-            height: 60,
-            width: 60
-        },
-    },
-    {
-        name: 'Eyal Shats',
-        description: 'Co-founder and CSO',
-        srcImageProfile: eyal_shats_profile,
-        srcImageStartUp: simpli_route,
         imageStartUpSize: {
             height: 60,
             width: 60
@@ -139,6 +58,46 @@ const Mentors: Speaker[] = [
         },
     },
     {
+        name: 'Cristina Kenna',
+        description: 'Partner',
+        srcImageProfile: cristina_kenna_profile,
+        srcImageStartUp: ignia,
+        imageStartUpSize: {
+            height: 60,
+            width: 110
+        },
+    },
+    {
+        name: 'Freddy Vega',
+        description: 'Founder and CEO',
+        srcImageProfile: freddy_vega_profile,
+        srcImageStartUp: platzi,
+        imageStartUpSize: {
+            height: 60,
+            width: 110
+        },
+    },
+    {
+        name: 'Ana Cristina Gadala',
+        description: 'Early stage fintech investor',
+        srcImageProfile: ana_cristina_gadala_profile,
+        srcImageStartUp: qed_investors,
+        imageStartUpSize: {
+            height: 50,
+            width: 50
+        },
+    },
+    {
+        name: 'Christian Van Der Henst',
+        description: 'Co-founder and President',
+        srcImageProfile: christian_van_der_henst_profile,
+        srcImageStartUp: platzi,
+        imageStartUpSize: {
+            height: 60,
+            width: 110
+        },
+    },
+    {
         name: 'Sarah AlSaleh',
         description: 'General Partner',
         srcImageProfile: sarah_alsaleh_profile,
@@ -146,6 +105,46 @@ const Mentors: Speaker[] = [
         imageStartUpSize: {
             height: 60,
             width: 60
+        },
+    },
+    {
+        name: 'Eyal Shats',
+        description: 'Co-founder and CSO',
+        srcImageProfile: eyal_shats_profile,
+        srcImageStartUp: simpli_route,
+        imageStartUpSize: {
+            height: 60,
+            width: 60
+        },
+    },
+    {
+        name: 'Daniela Alvarez',
+        description: 'Angel Investments',
+        srcImageProfile: daniela_alvarez_profile,
+        srcImageStartUp: nazca,
+        imageStartUpSize: {
+            height: 60,
+            width: 140
+        },
+    },
+    {
+        name: 'Laura Gonzalez',
+        description: 'CBO Strategic Growth',
+        srcImageProfile: laura_gonzalez_profile,
+        srcImageStartUp: stays,
+        imageStartUpSize: {
+            height: 60,
+            width: 60
+        },
+    },
+    {
+        name: 'Diego Galvez',
+        description: 'Founder',
+        srcImageProfile: diego_galvez_profile,
+        srcImageStartUp: mexOpp,
+        imageStartUpSize: {
+            height: 70,
+            width: 120
         },
     },
 ]
