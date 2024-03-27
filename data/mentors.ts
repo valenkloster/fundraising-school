@@ -58,7 +58,7 @@ const Mentors: Speaker[] = [
         },
     },
     {
-        name: 'Cristina Kenna',
+        name: 'Cristine Kenna',
         description: 'Partner',
         srcImageProfile: cristina_kenna_profile,
         srcImageStartUp: ignia,
