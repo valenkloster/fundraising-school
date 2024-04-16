@@ -41,9 +41,9 @@ export default function Sponsors() {
             </div>
 
             {/* Item  AZURE MICROSOFT*/}
-            <div data-aos="zoom-y-out" className="flex items-center justify-center py-2 col-span-2 md:col-auto">
+            {/* <div data-aos="zoom-y-out" className="flex items-center justify-center py-2 col-span-2 md:col-auto">
               <Image src={azure} alt='Logo of AZURE MICROSOFT' width={60} />
-            </div>
+            </div> */}
 
           </div>
         </div>
