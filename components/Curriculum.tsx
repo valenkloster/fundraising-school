@@ -18,6 +18,7 @@ export default function Curriculum() {
             }
         }
 
+        handlerResize();
         window.addEventListener('resize', handlerResize);
         return () => window.removeEventListener('resize', handlerResize);
     }, [])

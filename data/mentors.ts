@@ -13,6 +13,10 @@ import karla_berman_profile from "@/public/images/mentors/karla_berman_profile.p
 import eyal_shats_profile from "@/public/images/mentors/eyal_shats_profile.png"
 import adrian_garcia_aranyos_profile from "@/public/images/mentors/adrian_garcia_aranyos_profile.png"
 import sarah_alsaleh_profile from "@/public/images/mentors/sarah_alsaleh_profile.png"
+import alfonso_rios_profile from "@/public/images/mentors/alfonso_rios_profile.png"
+import anderson_thees_profile from "@/public/images/mentors/anderson_thees_profile.png"
+import federico_storani_profile from "@/public/images/mentors/federico_storani_profile.png"
+import hoi_ying_profile from "@/public/images/mentors/hoi_ying_profile.png"
 
 import mexOpp from "@/public/images/startups/mexOpp.png"
 import stays from "@/public/images/startups/stays.jpeg"
@@ -25,6 +29,10 @@ import shark_tank from "@/public/images/startups/shark_tank.png"
 import simpli_route from "@/public/images/startups/simpli_route.jpeg"
 import endeavorglobal from "@/public/images/startups/endeavorglobal.jpeg"
 import outliersvc from "@/public/images/startups/outliersvc.jpeg"
+import nowports from "@/public/images/startups/nowports.jpg"
+import banco_itau from "@/public/images/startups/banco_itau.png"
+import riverwood_capital from "@/public/images/startups/riverwood_capital.jpeg"
+import ifc from "@/public/images/startups/ifc.jpg"
 
 const Mentors: Speaker[] = [
     {
@@ -58,7 +66,7 @@ const Mentors: Speaker[] = [
         },
     },
     {
-        name: 'Christine Kenna',
+        name: 'Christine Kenna',
         description: 'Partner',
         srcImageProfile: cristina_kenna_profile,
         srcImageStartUp: ignia,
@@ -145,6 +153,46 @@ const Mentors: Speaker[] = [
         imageStartUpSize: {
             height: 70,
             width: 120
+        },
+    },
+    {
+        name: 'ALfonso de los Rios',
+        description: 'Founder and CEO',
+        srcImageProfile: alfonso_rios_profile,
+        srcImageStartUp: nowports,
+        imageStartUpSize: {
+            height: 60,
+            width: 60
+        },
+    },
+    {
+        name: 'Hoi Ying So',
+        description: 'Global Co-Head and VC',
+        srcImageProfile: hoi_ying_profile,
+        srcImageStartUp: ifc,
+        imageStartUpSize: {
+            height: 60,
+            width: 60
+        },
+    },
+    {
+        name: 'Anderson Thees',
+        description: 'Venture Capitalist',
+        srcImageProfile: anderson_thees_profile,
+        srcImageStartUp: banco_itau,
+        imageStartUpSize: {
+            height: 60,
+            width: 60
+        },
+    },
+    {
+        name: 'Federico Storani',
+        description: 'Executive Director',
+        srcImageProfile: federico_storani_profile,
+        srcImageStartUp: riverwood_capital,
+        imageStartUpSize: {
+            height: 60,
+            width: 60
         },
     },
 ]
