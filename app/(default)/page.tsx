@@ -13,7 +13,6 @@ import YtVideo from '@/components/YtVideo'
 import Curriculum from '@/components/Curriculum'
 import Mentors from '@/components/Mentors'
 
-
 export default function Home() {
   return (
     <>
