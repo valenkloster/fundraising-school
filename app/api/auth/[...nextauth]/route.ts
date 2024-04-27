@@ -1,7 +1,9 @@
 import NextAuth, { type NextAuthOptions } from "next-auth"
 import LinkedInProvider from "next-auth/providers/linkedin"
 
-async function profile(profile): Promise<{firstname: string | undefined, name: any, id: any, email: any, lastname: string | undefined}> {
+
+type Profile = { firstname: string | undefined, name: any, id: any, email: any, lastname: string | undefined }
+async function profile(profile: any): Promise<Profile> {
 
     console.log({ profile })
 
@@ -14,12 +16,12 @@ async function profile(profile): Promise<{firstname: string | undefined, name: a
     }
 }
 
-export const authOptions: NextAuthOptions = {
+const authOptions: NextAuthOptions = {
     // Configure one or more authentication providers
     providers: [
         LinkedInProvider({
-            clientId: process.env.LINKEDIN_CLIENT_ID,
-            clientSecret: process.env.LINKEDIN_CLIENT_SECRET,
+            clientId: process.env.LINKEDIN_CLIENT_ID ?? "",
+            clientSecret: process.env.LINKEDIN_CLIENT_SECRET ?? "",
             client: { token_endpoint_auth_method: "client_secret_post" },
             authorization: { params: { scope: 'profile email openid' } },
             issuer: 'https://www.linkedin.com',
@@ -31,6 +33,6 @@ export const authOptions: NextAuthOptions = {
     ],
 }
 
-export const handler = NextAuth(authOptions);
+const handler = NextAuth(authOptions);
 
 export { handler as GET, handler as POST };
