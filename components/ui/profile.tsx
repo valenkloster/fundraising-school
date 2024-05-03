@@ -1,17 +1,32 @@
-import Image from "next/image"
-import { Speaker } from "@/models/speaker"
-import { StaticImport } from "next/dist/shared/lib/get-img-props"
-
+import Image from 'next/image';
+import { Speaker } from '@/models/speaker';
 
 export default function Profile({ profile }: { profile: Speaker }) {
-    return (
-        <article className="flex flex-col items-center mx-auto h-[360px] min-w-[220px]" data-aos="zoom-y-out">
-            <Image src={profile.srcImageProfile as string | StaticImport} alt={`Picture of ${profile.name}`} width={180} height={180} />
-            <div className="text-left h-auto flex flex-col items-center">
-                <h3 className="font-semibold text-lg">{profile.name}</h3>
-                <p className="font-light my-2 text-center">{profile.description}</p>
-                <Image src={profile.srcImageStartUp as string | StaticImport} alt={`Logo of startup where work ${profile.name}`} priority width={profile.imageStartUpSize.width} height={profile.imageStartUpSize.height} />
-            </div>
-        </article>
-    )
+  return (
+    <article
+      className="mx-auto flex h-[360px] min-w-[220px] flex-col items-center"
+      data-aos="zoom-y-out"
+    >
+      <Image
+        src={profile.srcImageProfile}
+        alt={`Picture of ${profile.name}`}
+        width={180}
+        height={180}
+        style={{ width: 'auto', height: 'auto' }}
+        placeholder="blur"
+      />
+      <div className="flex h-auto flex-col items-center text-left">
+        <h3 className="text-lg font-semibold">{profile.name}</h3>
+        <p className="my-2 text-center font-light">{profile.description}</p>
+        <Image
+          src={profile.srcImageStartUp}
+          alt={`Logo of startup where work ${profile.name}`}
+          width={profile.imageStartUpSize.width}
+          height={profile.imageStartUpSize.height}
+          style={{ height: 'auto' }}
+          placeholder="blur"
+        />
+      </div>
+    </article>
+  );
 }

@@ -1,7 +1,7 @@
 export interface Speaker {
-    srcImageProfile: {};
-    name: string;
-    description: string;
-    srcImageStartUp: {};
-    imageStartUpSize: { width: number; height: number }
+  name: string;
+  description: string;
+  srcImageProfile: string;
+  srcImageStartUp: string;
+  imageStartUpSize: { width: number; height: number };
 }
