@@ -1,23 +1,24 @@
 'use client';
 
-import Image from 'next/image';
 import { useEffect, useState } from 'react';
-import { AppLink } from '@/data/enums';
+import Image, { StaticImageData } from 'next/image';
+import curriculumImage from '@/public/images/curriculum/curriculum.jpg';
+import curriculumMovilImage from '@/public/images/curriculum/curriculum_movil.jpg';
 
 interface CurriculumProps {
-  url: string;
+  srcImage: StaticImageData;
   height: number;
   width: number;
 }
 
 const curriculum: CurriculumProps = {
-  url: `${AppLink.CDN}/curriculum/curriculum.jpg`,
+  srcImage: curriculumImage,
   height: 600,
   width: 869,
 };
 
 const curriculum_movil: CurriculumProps = {
-  url: `${AppLink.CDN}/curriculum/curriculum_movil.jpg`,
+  srcImage: curriculumMovilImage,
   height: 600,
   width: 800,
 };
@@ -47,7 +48,7 @@ export default function Curriculum() {
           Preliminary Curriculum{' '}
         </h2>
         <Image
-          src={imageProps.url}
+          src={imageProps.srcImage}
           alt={'Image with the curriculum of fundraising school'}
           height={imageProps.height}
           width={imageProps.width}

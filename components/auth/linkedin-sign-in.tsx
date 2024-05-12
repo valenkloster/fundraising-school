@@ -7,7 +7,7 @@ import { signIn } from 'next-auth/react';
 export default function LinkedInSignIn({ className }: { className: string }) {
   return (
     <button
-      onClick={() => signIn('linkedin')}
+      onClick={() => signIn('linkedin', { callbackUrl: '/signin/success' })}
       className={clsx(
         'btn flex h-11 w-full max-w-[335px] items-center gap-[6px] rounded-3xl bg-fsPurple px-4 text-white',
         className,

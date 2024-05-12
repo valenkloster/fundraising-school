@@ -1,13 +1,5 @@
 import Image from 'next/image';
-import { AppLink } from '@/data/enums';
-
-const andres_bilbao_profile = `${AppLink.CDN}/tutors/andres_bilbao_profile.png`;
-const laura_gaviria_profile = `${AppLink.CDN}/tutors/laura_gaviria_profile.png`;
-
-const rappi = `${AppLink.CDN}/startups/rappi.png`;
-const makers = `${AppLink.CDN}/startups/makers.png`;
-const softbank = `${AppLink.CDN}/startups/softbank.png`;
-const faktory = `${AppLink.CDN}/startups/faktory.png`;
+import { Startups, Profiles } from '@/data/enums';
 
 export default function Hosts() {
   return (
@@ -22,7 +14,7 @@ export default function Hosts() {
             data-aos="zoom-y-out"
           >
             <Image
-              src={laura_gaviria_profile}
+              src={Profiles.laura_gaviria_profile}
               alt={`Picture of Laura Gaviria Halaby`}
               className="sm:-translate-y-5"
               width={180}
@@ -44,14 +36,14 @@ export default function Hosts() {
                 </li>
                 <div className="my-4 flex translate-x-4 flex-wrap gap-2">
                   <Image
-                    src={faktory}
+                    src={Startups.faktory}
                     alt="image of Faktory AI"
                     width={80}
                     height={25}
                     style={{ width: 'auto', height: 'auto' }}
                   />
                   <Image
-                    src={softbank}
+                    src={Startups.softbank}
                     alt="image of Ex-SoftBank"
                     width={110}
                     height={25}
@@ -67,7 +59,7 @@ export default function Hosts() {
             data-aos="zoom-y-out"
           >
             <Image
-              src={andres_bilbao_profile}
+              src={Profiles.andres_bilbao_profile}
               alt={`Picture of Andres Bilbao`}
               className="sm:-translate-y-5"
               width={180}
@@ -81,14 +73,14 @@ export default function Hosts() {
                   Co-founder
                   <div className="my-4 flex gap-2">
                     <Image
-                      src={makers}
+                      src={Startups.makers}
                       alt="image of Makers"
                       width={35}
                       height={35}
                       style={{ width: 'auto', height: 'auto' }}
                     />
                     <Image
-                      src={rappi}
+                      src={Startups.rappi}
                       alt="image of Rappi"
                       width={80}
                       height={35}

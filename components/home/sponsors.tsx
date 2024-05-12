@@ -1,10 +1,5 @@
 import Image from 'next/image';
-import { AppLink } from '@/data/enums';
-
-const onTop = `${AppLink.CDN}/partners/onTop.png`;
-const faktory = `${AppLink.CDN}/startups/faktory.png`;
-const truora = `${AppLink.CDN}/partners/truora.png`;
-const mention = `${AppLink.CDN}/partners/mention.png`;
+import { Startups } from '@/data/enums';
 
 export default function Sponsors() {
   return (
@@ -27,7 +22,7 @@ export default function Sponsors() {
               className="col-span-2 flex items-center justify-center py-2 md:col-auto"
             >
               <Image
-                src={onTop}
+                src={Startups.onTop}
                 alt="Logo of OnTop"
                 width={120}
                 height={140}
@@ -41,7 +36,7 @@ export default function Sponsors() {
               className="col-span-2 flex items-center justify-center py-2 md:col-auto"
             >
               <Image
-                src={mention}
+                src={Startups.mention}
                 alt="Logo of Mention"
                 width={120}
                 height={140}
@@ -55,7 +50,7 @@ export default function Sponsors() {
               className="col-span-2 flex items-center justify-center py-2 md:col-auto"
             >
               <Image
-                src={faktory}
+                src={Startups.faktory}
                 alt="Logo of Faktory"
                 width={120}
                 height={140}
@@ -69,7 +64,7 @@ export default function Sponsors() {
               className="col-span-2 flex items-center justify-center py-2 md:col-auto"
             >
               <Image
-                src={truora}
+                src={Startups.truora}
                 alt="Logo of Truora"
                 width={120}
                 height={140}

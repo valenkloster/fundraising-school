@@ -1,12 +1,12 @@
 import type { Speaker } from '@/models/speaker';
-import { AppLink } from '@/data/enums';
+import { Profiles, Startups } from '@/data/enums';
 
 const Speakers: Speaker[] = [
   {
     name: 'Brynne McNulty',
     description: 'Founder & CEO',
-    srcImageProfile: `${AppLink.CDN}/tutors/brynne_mcnulty_profile.png`,
-    srcImageStartUp: `${AppLink.CDN}/startups/habi.png`,
+    srcImageProfile: Profiles.brynne_mcnulty_profile,
+    srcImageStartUp: Startups.habi,
     imageStartUpSize: {
       height: 50,
       width: 50,
@@ -15,8 +15,8 @@ const Speakers: Speaker[] = [
   {
     name: 'Mercedes Bent',
     description: 'Partner',
-    srcImageProfile: `${AppLink.CDN}/tutors/mercedes_bent_profile.png`,
-    srcImageStartUp: `${AppLink.CDN}/startups/lightspeed.png`,
+    srcImageProfile: Profiles.mercedes_bent_profile,
+    srcImageStartUp: Startups.lightspeed,
     imageStartUpSize: {
       height: 50,
       width: 140,
@@ -25,8 +25,8 @@ const Speakers: Speaker[] = [
   {
     name: 'Courtney Powell',
     description: 'Managing Partner & COO',
-    srcImageProfile: `${AppLink.CDN}/tutors/courtney_powell_profile.png`,
-    srcImageStartUp: `${AppLink.CDN}/startups/500.png`,
+    srcImageProfile: Profiles.courtney_powell_profile,
+    srcImageStartUp: Startups.logo_500,
     imageStartUpSize: {
       height: 50,
       width: 140,
@@ -35,8 +35,8 @@ const Speakers: Speaker[] = [
   {
     name: 'David Vélez',
     description: 'Founder & CEO',
-    srcImageProfile: `${AppLink.CDN}/tutors/david_velez_profile.png`,
-    srcImageStartUp: `${AppLink.CDN}/startups/nubank.png`,
+    srcImageProfile: Profiles.david_velez_profile,
+    srcImageStartUp: Startups.nubank,
     imageStartUpSize: {
       height: 50,
       width: 60,
@@ -45,8 +45,8 @@ const Speakers: Speaker[] = [
   {
     name: 'Simón Borrero',
     description: 'Founder & CEO',
-    srcImageProfile: `${AppLink.CDN}/tutors/simon_borrero_profile.png`,
-    srcImageStartUp: `${AppLink.CDN}/startups/rappi.png`,
+    srcImageProfile: Profiles.simon_borrero_profile,
+    srcImageStartUp: Startups.rappi,
     imageStartUpSize: {
       height: 50,
       width: 70,
@@ -55,8 +55,8 @@ const Speakers: Speaker[] = [
   {
     name: 'Marcelo Claure',
     description: 'Founder & CEO',
-    srcImageProfile: `${AppLink.CDN}/tutors/marcelo_claure_profile.png`,
-    srcImageStartUp: `${AppLink.CDN}/startups/claure_group.png`,
+    srcImageProfile: Profiles.marcelo_claure_profile,
+    srcImageStartUp: Startups.claure_group,
     imageStartUpSize: {
       height: 80,
       width: 80,
@@ -65,8 +65,8 @@ const Speakers: Speaker[] = [
   {
     name: 'Nico Berman',
     description: 'Partner',
-    srcImageProfile: `${AppLink.CDN}/tutors/nico_berman_profile.png`,
-    srcImageStartUp: `${AppLink.CDN}/startups/kaszek-ventures.png`,
+    srcImageProfile: Profiles.nico_berman_profile,
+    srcImageStartUp: Startups.kaszek,
     imageStartUpSize: {
       height: 50,
       width: 100,
@@ -75,8 +75,8 @@ const Speakers: Speaker[] = [
   {
     name: 'Paulo Passoni',
     description: 'Managing Partner',
-    srcImageProfile: `${AppLink.CDN}/tutors/paulo_passoni_profile.png`,
-    srcImageStartUp: `${AppLink.CDN}/startups/valor.png`,
+    srcImageProfile: Profiles.paulo_passoni_profile,
+    srcImageStartUp: Startups.valor,
     imageStartUpSize: {
       height: 50,
       width: 100,
@@ -85,8 +85,8 @@ const Speakers: Speaker[] = [
   {
     name: 'Mike Maples, Jr',
     description: 'Managing Partner',
-    srcImageProfile: `${AppLink.CDN}/tutors/mike_maples_jr_profile.png`,
-    srcImageStartUp: `${AppLink.CDN}/startups/floodgate.png`,
+    srcImageProfile: Profiles.mike_maples_jr_profile,
+    srcImageStartUp: Startups.floodgate,
     imageStartUpSize: {
       height: 50,
       width: 140,
@@ -95,8 +95,8 @@ const Speakers: Speaker[] = [
   {
     name: 'Carlo Dapuzzo',
     description: 'General Partner',
-    srcImageProfile: `${AppLink.CDN}/tutors/carlos_dapuzzo_profile.png`,
-    srcImageStartUp: `${AppLink.CDN}/startups/monashees.png`,
+    srcImageProfile: Profiles.carlos_dapuzzo_profile,
+    srcImageStartUp: Startups.monashees,
     imageStartUpSize: {
       height: 50,
       width: 140,
@@ -105,8 +105,8 @@ const Speakers: Speaker[] = [
   {
     name: 'Connie Grossi',
     description: 'Leadership & Talent Advisor',
-    srcImageProfile: `${AppLink.CDN}/tutors/connie_grossi_profile.png`,
-    srcImageStartUp: `${AppLink.CDN}/startups/leadership_advisor.png`,
+    srcImageProfile: Profiles.connie_grossi_profile,
+    srcImageStartUp: Startups.leadership_advisor,
     imageStartUpSize: {
       height: 68,
       width: 68,
@@ -115,8 +115,8 @@ const Speakers: Speaker[] = [
   {
     name: 'Rodrigo Baer',
     description: 'Co-founder and Managing Partner',
-    srcImageProfile: `${AppLink.CDN}/tutors/rodrigo_baer_profile.png`,
-    srcImageStartUp: `${AppLink.CDN}/startups/upload.png`,
+    srcImageProfile: Profiles.rodrigo_baer_profile,
+    srcImageStartUp: Startups.upload,
     imageStartUpSize: {
       height: 70,
       width: 100,
@@ -125,8 +125,8 @@ const Speakers: Speaker[] = [
   {
     name: 'Enrique Conde',
     description: 'Partner',
-    srcImageProfile: `${AppLink.CDN}/tutors/enrique_conde_profile.png`,
-    srcImageStartUp: `${AppLink.CDN}/startups/hk.png`,
+    srcImageProfile: Profiles.enrique_conde_profile,
+    srcImageStartUp: Startups.hk,
     imageStartUpSize: {
       height: 50,
       width: 170,
@@ -135,8 +135,8 @@ const Speakers: Speaker[] = [
   {
     name: 'Gabriel Vasquez',
     description: 'Investment Partner',
-    srcImageProfile: `${AppLink.CDN}/tutors/gabriel_vasquez_profile.png`,
-    srcImageStartUp: `${AppLink.CDN}/startups/a16z.png`,
+    srcImageProfile: Profiles.gabriel_vasquez_profile,
+    srcImageStartUp: Startups.a16z,
     imageStartUpSize: {
       height: 45,
       width: 45,
@@ -145,8 +145,8 @@ const Speakers: Speaker[] = [
   {
     name: 'Juan Felipe Muñoz',
     description: 'Partner',
-    srcImageProfile: `${AppLink.CDN}/tutors/juan_felipe_muñoz_profile.png`,
-    srcImageStartUp: `${AppLink.CDN}/startups/britten.png`,
+    srcImageProfile: Profiles.juan_felipe_muñoz_profile,
+    srcImageStartUp: Startups.britten,
     imageStartUpSize: {
       height: 60,
       width: 100,
@@ -155,8 +155,8 @@ const Speakers: Speaker[] = [
   {
     name: 'Keith Ferrazzi',
     description: 'Author of "Never Eat Alone"',
-    srcImageProfile: `${AppLink.CDN}/tutors/keith_ferrazzi_profile.png`,
-    srcImageStartUp: `${AppLink.CDN}/startups/green.png`,
+    srcImageProfile: Profiles.keith_ferrazzi_profile,
+    srcImageStartUp: Startups.green,
     imageStartUpSize: {
       height: 70,
       width: 140,

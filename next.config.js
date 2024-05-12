@@ -5,8 +5,8 @@ const nextConfig = {
       {
         protocol: 'https',
         port: '',
-        hostname: 'd1mgh288ipfiad.cloudfront.net',
-        pathname: '/images/**',
+        hostname: 'media.licdn.com',
+        pathname: '/dms/image/**',
       },
     ],
   },

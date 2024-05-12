@@ -10,7 +10,7 @@ export default function YtVideo() {
         <p className="pb-12 text-xl text-gray-600 md:pb-16" data-aos="zoom-y-out">
           You will receive personalized advice to learn how to actually get funded.
         </p>
-        <div className="relative mb-12 block h-0 w-full pb-[56.25%] md:mb-16">
+        <div className="relative mb-12 block h-0 w-full pb-9/16 md:mb-16">
           <iframe
             className="absolute left-0 top-0 size-full"
             src="https://www.youtube.com/embed/1R5-cTsDS-8?si=jQ6gCnYLwsX351rK"

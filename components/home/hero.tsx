@@ -7,10 +7,10 @@ export default function Hero() {
         <div className="pb-12 pt-32 md:pb-20 md:pt-40">
           <div className="pb-12 text-center md:pb-16">
             <h1
-              className="mb-4 text-4xl font-extrabold tracking-tighter sm:text-5xl md:text-6xl"
+              className="mb-4 text-4xl font-extrabold leading-tighter tracking-tighter sm:text-5xl md:text-6xl"
               data-aos="zoom-y-out"
             >
-              For entrepreneurs by{' '}
+              For entrepreneurs by <br />
               <span className="bg-gradient-to-r from-fsPurple to-fsPink bg-clip-text text-transparent">
                 entrepreneurs
               </span>
@@ -28,11 +28,11 @@ export default function Hero() {
                 <p className="w-full text-center text-3xl font-bold sm:w-auto">
                   April 25th - May 31st
                 </p>
-                <p className="my-2 w-full text-center text-3xl font-bold text-fsPink sm:w-auto">
+                <p className="my-2 w-full text-center text-3xl font-bold text-darkFsPink sm:w-auto">
                   100% Free
                 </p>
                 <a
-                  className="btn mb-4 w-full rounded-3xl border-fsPurple bg-white px-14 text-fsPurple duration-150 hover:bg-fsPurple hover:text-white focus:bg-darkFsPurple focus:text-white sm:mb-0 sm:w-auto"
+                  className="btn mb-4 w-full rounded-3xl border-fsPurple bg-white px-14 font-serif text-fsPurple duration-150 hover:bg-fsPurple hover:text-white focus:bg-darkFsPurple focus:text-white sm:mb-0 sm:w-auto"
                   href={AppLink.JoinLink}
                   target="_blank"
                   rel="noopener"

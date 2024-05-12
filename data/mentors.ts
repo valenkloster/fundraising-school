@@ -1,12 +1,12 @@
 import type { Speaker } from '@/models/speaker';
-import { AppLink } from '@/data/enums';
+import { Profiles, Startups } from '@/data/enums';
 
 const Mentors: Speaker[] = [
   {
     name: 'Javier Villamizar',
     description: 'Operating Partner',
-    srcImageProfile: `${AppLink.CDN}/mentors/javier_villamizar_profile.png`,
-    srcImageStartUp: `${AppLink.CDN}/startups/softbank.png`,
+    srcImageProfile: Profiles.javier_villamizar_profile,
+    srcImageStartUp: Startups.softbank,
     imageStartUpSize: {
       height: 50,
       width: 120,
@@ -15,8 +15,8 @@ const Mentors: Speaker[] = [
   {
     name: 'Karla Berman',
     description: 'Shark Tank México',
-    srcImageProfile: `${AppLink.CDN}/mentors/karla_berman_profile.png`,
-    srcImageStartUp: `${AppLink.CDN}/startups/shark_tank.png`,
+    srcImageProfile: Profiles.karla_berman_profile,
+    srcImageStartUp: Startups.shark_tank,
     imageStartUpSize: {
       height: 60,
       width: 60,
@@ -25,8 +25,8 @@ const Mentors: Speaker[] = [
   {
     name: 'Adrian Garcia-Aranyos',
     description: 'Global President',
-    srcImageProfile: `${AppLink.CDN}/mentors/adrian_garcia_aranyos_profile.png`,
-    srcImageStartUp: `${AppLink.CDN}/startups/endeavorglobal.jpeg`,
+    srcImageProfile: Profiles.adrian_garcia_aranyos_profile,
+    srcImageStartUp: Startups.endeavorglobal,
     imageStartUpSize: {
       height: 60,
       width: 60,
@@ -35,8 +35,8 @@ const Mentors: Speaker[] = [
   {
     name: 'Christine Kenna',
     description: 'Partner',
-    srcImageProfile: `${AppLink.CDN}/mentors/cristina_kenna_profile.png`,
-    srcImageStartUp: `${AppLink.CDN}/startups/ignia.png`,
+    srcImageProfile: Profiles.cristina_kenna_profile,
+    srcImageStartUp: Startups.ignia,
     imageStartUpSize: {
       height: 60,
       width: 110,
@@ -45,8 +45,8 @@ const Mentors: Speaker[] = [
   {
     name: 'Freddy Vega',
     description: 'Founder and CEO',
-    srcImageProfile: `${AppLink.CDN}/mentors/freddy_vega_profile.png`,
-    srcImageStartUp: `${AppLink.CDN}/startups/platzi.png`,
+    srcImageProfile: Profiles.freddy_vega_profile,
+    srcImageStartUp: Startups.platzi,
     imageStartUpSize: {
       height: 60,
       width: 110,
@@ -55,8 +55,8 @@ const Mentors: Speaker[] = [
   {
     name: 'Ana Cristina Gadala',
     description: 'Early stage fintech investor',
-    srcImageProfile: `${AppLink.CDN}/mentors/ana_cristina_gadala_profile.png`,
-    srcImageStartUp: `${AppLink.CDN}/startups/qed_investors.jpeg`,
+    srcImageProfile: Profiles.ana_cristina_gadala_profile,
+    srcImageStartUp: Startups.qed_investors,
     imageStartUpSize: {
       height: 50,
       width: 50,
@@ -65,8 +65,8 @@ const Mentors: Speaker[] = [
   {
     name: 'Christian Van Der Henst',
     description: 'Co-founder and President',
-    srcImageProfile: `${AppLink.CDN}/mentors/christian_van_der_henst_profile.png`,
-    srcImageStartUp: `${AppLink.CDN}/startups/platzi.png`,
+    srcImageProfile: Profiles.christian_van_der_henst_profile,
+    srcImageStartUp: Startups.platzi,
     imageStartUpSize: {
       height: 60,
       width: 110,
@@ -75,8 +75,8 @@ const Mentors: Speaker[] = [
   {
     name: 'Sarah AlSaleh',
     description: 'General Partner',
-    srcImageProfile: `${AppLink.CDN}/mentors/sarah_alsaleh_profile.png`,
-    srcImageStartUp: `${AppLink.CDN}/startups/outliersvc.jpeg`,
+    srcImageProfile: Profiles.sarah_alsaleh_profile,
+    srcImageStartUp: Startups.outliersvc,
     imageStartUpSize: {
       height: 60,
       width: 60,
@@ -85,8 +85,8 @@ const Mentors: Speaker[] = [
   {
     name: 'Eyal Shats',
     description: 'Co-founder and CSO',
-    srcImageProfile: `${AppLink.CDN}/mentors/eyal_shats_profile.png`,
-    srcImageStartUp: `${AppLink.CDN}/startups/simpli_route.jpeg`,
+    srcImageProfile: Profiles.eyal_shats_profile,
+    srcImageStartUp: Startups.simpli_route,
     imageStartUpSize: {
       height: 60,
       width: 60,
@@ -95,8 +95,8 @@ const Mentors: Speaker[] = [
   {
     name: 'Daniela Alvarez',
     description: 'Angel Investments',
-    srcImageProfile: `${AppLink.CDN}/mentors/daniela_alvarez_profile.png`,
-    srcImageStartUp: `${AppLink.CDN}/startups/nazca.png`,
+    srcImageProfile: Profiles.daniela_alvarez_profile,
+    srcImageStartUp: Startups.nazca,
     imageStartUpSize: {
       height: 60,
       width: 140,
@@ -105,8 +105,8 @@ const Mentors: Speaker[] = [
   {
     name: 'Laura Gonzalez',
     description: 'CBO Strategic Growth',
-    srcImageProfile: `${AppLink.CDN}/mentors/laura_gonzalez_profile.png`,
-    srcImageStartUp: `${AppLink.CDN}/startups/stays.jpeg`,
+    srcImageProfile: Profiles.laura_gonzalez_profile,
+    srcImageStartUp: Startups.stays,
     imageStartUpSize: {
       height: 60,
       width: 60,
@@ -115,8 +115,8 @@ const Mentors: Speaker[] = [
   {
     name: 'Diego Galvez',
     description: 'Founder',
-    srcImageProfile: `${AppLink.CDN}/mentors/diego_galvez_profile.png`,
-    srcImageStartUp: `${AppLink.CDN}/startups/mexOpp.png`,
+    srcImageProfile: Profiles.diego_galvez_profile,
+    srcImageStartUp: Startups.mexOpp,
     imageStartUpSize: {
       height: 70,
       width: 120,
@@ -125,8 +125,8 @@ const Mentors: Speaker[] = [
   {
     name: 'ALfonso de los Rios',
     description: 'Founder and CEO',
-    srcImageProfile: `${AppLink.CDN}/mentors/alfonso_rios_profile.png`,
-    srcImageStartUp: `${AppLink.CDN}/startups/nowports.jpg`,
+    srcImageProfile: Profiles.alfonso_rios_profile,
+    srcImageStartUp: Startups.nowports,
     imageStartUpSize: {
       height: 60,
       width: 60,
@@ -135,8 +135,8 @@ const Mentors: Speaker[] = [
   {
     name: 'Hoi Ying So',
     description: 'Global Co-Head and VC',
-    srcImageProfile: `${AppLink.CDN}/mentors/hoi_ying_profile.png`,
-    srcImageStartUp: `${AppLink.CDN}/startups/ifc.jpg`,
+    srcImageProfile: Profiles.hoi_ying_profile,
+    srcImageStartUp: Startups.ifc,
     imageStartUpSize: {
       height: 60,
       width: 60,
@@ -145,8 +145,8 @@ const Mentors: Speaker[] = [
   {
     name: 'Anderson Thees',
     description: 'Venture Capitalist',
-    srcImageProfile: `${AppLink.CDN}/mentors/anderson_thees_profile.png`,
-    srcImageStartUp: `${AppLink.CDN}/startups/banco_itau.png`,
+    srcImageProfile: Profiles.anderson_thees_profile,
+    srcImageStartUp: Startups.banco_itau,
     imageStartUpSize: {
       height: 60,
       width: 60,
@@ -155,8 +155,8 @@ const Mentors: Speaker[] = [
   {
     name: 'Federico Storani',
     description: 'Executive Director',
-    srcImageProfile: `${AppLink.CDN}/mentors/federico_storani_profile.png`,
-    srcImageStartUp: `${AppLink.CDN}/startups/riverwood_capital.jpeg`,
+    srcImageProfile: Profiles.federico_storani_profile,
+    srcImageStartUp: Startups.riverwood_capital,
     imageStartUpSize: {
       height: 60,
       width: 60,

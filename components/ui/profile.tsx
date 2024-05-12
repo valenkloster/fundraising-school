@@ -13,7 +13,6 @@ export default function Profile({ profile }: { profile: Speaker }) {
         width={180}
         height={180}
         style={{ width: 'auto', height: 'auto' }}
-        placeholder="blur"
       />
       <div className="flex h-auto flex-col items-center text-left">
         <h3 className="text-lg font-semibold">{profile.name}</h3>
@@ -24,7 +23,6 @@ export default function Profile({ profile }: { profile: Speaker }) {
           width={profile.imageStartUpSize.width}
           height={profile.imageStartUpSize.height}
           style={{ height: 'auto' }}
-          placeholder="blur"
         />
       </div>
     </article>

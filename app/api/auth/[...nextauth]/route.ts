@@ -7,6 +7,7 @@ type Profile = {
   id: string;
   email: string;
   lastname: string | undefined;
+  image: string | undefined;
 };
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
@@ -17,10 +18,11 @@ async function profile(profile: any): Promise<Profile> {
     firstname: profile.given_name,
     lastname: profile.family_name,
     email: profile.email,
+    image: profile.picture,
   };
 }
 
-const authOptions: NextAuthOptions = {
+export const authOptions: NextAuthOptions = {
   providers: [
     LinkedInProvider({
       clientId: process.env.LINKEDIN_CLIENT_ID ?? '',
@@ -29,12 +31,15 @@ const authOptions: NextAuthOptions = {
       authorization: { params: { scope: 'profile email openid' } },
       issuer: 'https://www.linkedin.com',
       jwks_endpoint: 'https://www.linkedin.com/oauth/openid/jwks',
-      profile,
+      profile: profile,
       wellKnown: 'https://www.linkedin.com/oauth/.well-known/openid-configuration',
     }),
   ],
   pages: {
     signIn: '/signin',
+  },
+  session: {
+    strategy: 'jwt',
   },
 };
 

@@ -1,10 +1,5 @@
 import '@/styles/style.css';
-import { DM_Sans } from 'next/font/google';
-
-const dm_sans = DM_Sans({
-  subsets: ['latin'],
-  display: 'swap',
-});
+import { dm_sans } from '@/app/fonts';
 
 export const metadata = {
   title: 'Fundraising School - Be a great deal for investors and raise money like a pro',
@@ -14,11 +9,9 @@ export const metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en">
-      <body className={`${dm_sans.className} bg-white tracking-tight text-gray-900 antialiased`}>
-        <div className="flex min-h-screen flex-col overflow-hidden supports-[overflow:clip]:text-clip">
-          {children}
-        </div>
+    <html lang="en" className={`${dm_sans.variable}`}>
+      <body className="bg-white font-sans tracking-tight text-gray-900 antialiased">
+        {children}
       </body>
     </html>
   );

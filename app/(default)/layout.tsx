@@ -17,10 +17,10 @@ export default function DefaultLayout({ children }: { children: React.ReactNode 
   });
 
   return (
-    <>
+    <div className="flex min-h-screen flex-col overflow-hidden supports-[overflow:clip]:text-clip">
       <Header />
       <main className="grow scroll-smooth">{children}</main>
       <Footer />
-    </>
+    </div>
   );
 }
