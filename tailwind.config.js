@@ -15,6 +15,8 @@ module.exports = {
         darkFsPurple: '#3F61AA',
         fsPink: '#d699ed',
         darkFsPink: '#d966ed',
+        fsGray: '#565d6dff',
+        lightFsPurple: '#ced6f6ff',
       },
       gridTemplateColumns: {
         authLayout: '65% 35%',

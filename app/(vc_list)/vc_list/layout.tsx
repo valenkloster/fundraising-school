@@ -33,7 +33,7 @@ export default async function VcListLayout({ children }: { children: React.React
             <Navbar />
           </nav>
         </div>
-        <div className="mb-10 flex flex-col items-center">
+        <div className="mb-10 mt-auto flex flex-col items-center">
           <Image
             src={data?.user?.image as string}
             className="rounded-full"
@@ -43,7 +43,7 @@ export default async function VcListLayout({ children }: { children: React.React
             alt={`Linkedin Profile Picture of ${data?.user?.name}`}
           />
           <h3 className="text-base">{data?.user?.name}</h3>
-          <a href="#" className="text-sm text-[#6F7787FF]">
+          <a href="#" className="text-fsGray text-sm">
             Cerrar Sesión
           </a>
         </div>
