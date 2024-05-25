@@ -1,5 +1,5 @@
 import type { Speaker } from '@/models/speaker';
-import { Profiles, Startups } from '@/data/enums';
+import { Profiles, Startups } from '@/data/assets';
 
 const Speakers: Speaker[] = [
   {

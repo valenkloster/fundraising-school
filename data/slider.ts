@@ -1,4 +1,4 @@
-import { Profiles, Startups } from '@/data/enums';
+import { Profiles, Startups } from '@/data/assets';
 
 const sliderProfiles = {
   'david-velez': {
