@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import { Startups } from '@/data/enums';
+import { Startups } from '@/data/assets';
 
 export default function Sponsors() {
   return (

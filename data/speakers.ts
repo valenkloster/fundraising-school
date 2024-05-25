@@ -162,6 +162,16 @@ const Speakers: Speaker[] = [
       width: 140,
     },
   },
+  {
+    name: 'Ronen Olshansky',
+    description: 'Co-Founder & CEO',
+    srcImageProfile: Profiles.ronan_final_profile,
+    srcImageStartUp: Startups.connected,
+    imageStartUpSize: {
+      height: 68,
+      width: 68,
+    },
+  },
 ];
 
 export default Speakers;

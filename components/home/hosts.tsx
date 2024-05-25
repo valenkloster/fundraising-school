@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import { Startups, Profiles } from '@/data/enums';
+import { Startups, Profiles } from '@/data/assets';
 
 export default function Hosts() {
   return (

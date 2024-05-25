@@ -32,8 +32,10 @@ import rodrigo_baer_profile from '@/public/images/tutors/rodrigo_baer_profile.pn
 import connie_grossi_profile from '@/public/images/tutors/connie_grossi_profile.png';
 import laura_gaviria_profile from '@/public/images/tutors/laura_gaviria_profile.png';
 import andres_bilbao_profile from '@/public/images/tutors/andres_bilbao_profile.png';
+import ronan_final_profile from '@/public/images/tutors/ronan_final_profile.png';
 
 export const Profiles = {
+  ronan_final_profile,
   diego_galvez_profile,
   laura_gonzalez_profile,
   daniela_alvarez_profile,
@@ -106,8 +108,10 @@ import makers from '@/public/images/startups/makers.png';
 import onTop from '@/public/images/partners/onTop.png';
 import mention from '@/public/images/partners/mention.png';
 import truora from '@/public/images/partners/truora.png';
+import connected from '@/public/images/startups/connected.jpeg';
 
 export const Startups = {
+  connected,
   mexOpp,
   stays,
   nazca,

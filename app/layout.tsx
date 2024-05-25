@@ -1,3 +1,5 @@
+import { GoogleAnalytics } from '@next/third-parties/google';
+
 import '@/styles/style.css';
 import { dm_sans } from '@/app/fonts';
 
@@ -13,6 +15,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <body className="bg-white font-sans tracking-tight text-gray-900 antialiased">
         {children}
       </body>
+      <GoogleAnalytics gaId="G-RGW9DB0X3C" />
     </html>
   );
 }
