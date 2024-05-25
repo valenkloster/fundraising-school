@@ -32,7 +32,7 @@ export default function ConfirmUserDataForm({ data }: { data: Session | null }) 
 
       router.replace(AppLink.Activation.Round);
     },
-    [validName, validEmail, name, email],
+    [validName, validEmail, router],
   );
 
   useEffect(() => {

@@ -15,16 +15,16 @@
   @apply text-2xl font-bold leading-snug tracking-tight;
 }
 
-input[type="checkbox"]:focus {
-  @apply shadow-none outline-none ring-0 ring-offset-0 ;
+input[type='checkbox']:focus {
+  @apply shadow-none outline-none ring-0 ring-offset-0;
 }
 
-input[type="checkbox"]:checked {
+input[type='checkbox']:checked {
   @apply text-fsPurple shadow-none;
 }
 
-input[type="checkbox"] {
-  @apply shadow-none appearance-none rounded-sm;
+input[type='checkbox'] {
+  @apply appearance-none rounded-sm shadow-none;
 
   appearance: none;
   -webkit-appearance: none;

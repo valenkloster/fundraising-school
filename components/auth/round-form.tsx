@@ -1,10 +1,9 @@
 'use client';
 
 import { useState, useCallback, FormEvent } from 'react';
-import { Session } from 'next-auth';
 import { Rounds } from '@/data/enums';
 
-export default function RoundForm({ data }: { data: Session | null }) {
+export default function RoundForm() {
   const [seekingCapital, setSeekingCapital] = useState<boolean>(false);
   const [agreeTermsAndConditions, setAgreeTermsAndConditions] = useState<boolean>(true);
 

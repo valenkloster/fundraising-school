@@ -1,6 +1,5 @@
 import Slider from '@/components/auth/slider';
 import Logo from '@/components/ui/logo';
-import Link from 'next/link';
 
 export default function AuthLayout({ children }: { children: React.ReactNode }) {
   return (

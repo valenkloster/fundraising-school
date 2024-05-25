@@ -30,7 +30,7 @@ export default async function Page() {
         />
         <h3 className="h3 text-center">{data?.user?.name}</h3>
       </div>
-      <RoundForm data={data} />
+      <RoundForm />
     </div>
   );
 }
