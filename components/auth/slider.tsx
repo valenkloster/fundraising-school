@@ -37,8 +37,8 @@ export default function Slider() {
   }, []);
 
   return (
-    <section className="hidden w-full flex-col items-center justify-center gap-4 bg-fsPurple sm:flex">
-      <div className="hidden w-64 sm:block">
+    <section className="hidden w-full flex-col items-center justify-center gap-4 bg-fsPurple lg:flex">
+      <div className="hidden w-64 lg:block">
         <Logo />
       </div>
       <div className="grid h-1/2 w-full place-content-center px-16">
