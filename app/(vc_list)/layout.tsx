@@ -1,25 +1,21 @@
-/* eslint-disable tailwindcss/classnames-order */
-import React from 'react';
+import Image from 'next/image';
+import { getServerSession } from 'next-auth';
+import { StaticImport } from 'next/dist/shared/lib/get-img-props';
+
 import Navbar from '@/components/vc_list/navbar';
 import Logo from '@/components/ui/logo';
-import Image from 'next/image';
+import defaultImageProfile from '@/public/images/default-profile.jpg';
 import { authOptions } from '@/app/api/auth/[...nextauth]/route';
-import { redirect } from 'next/navigation';
-import { Session, getServerSession } from 'next-auth';
-
-function existsUser(data: Session | null): boolean {
-  if (data && data.user && data.user.name && data.user.image) {
-    return true;
-  }
-
-  return false;
-}
 
 export default async function VcListLayout({ children }: { children: React.ReactNode }) {
   const data = await getServerSession(authOptions);
 
-  if (!existsUser(data)) {
-    redirect('/signin');
+  let imageProfile: string | StaticImport;
+
+  if (data?.user?.image) {
+    imageProfile = data?.user?.image;
+  } else {
+    imageProfile = defaultImageProfile;
   }
 
   return (
@@ -35,7 +31,7 @@ export default async function VcListLayout({ children }: { children: React.React
         </div>
         <div className="mb-10 mt-auto flex flex-col items-center">
           <Image
-            src={data?.user?.image as string}
+            src={imageProfile}
             className="rounded-full"
             width={90}
             height={100}
