@@ -13,3 +13,7 @@
     direction: rtl;
   }
 }
+
+thead tr tbody{
+  display:block;
+}

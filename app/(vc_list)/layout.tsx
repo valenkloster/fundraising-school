@@ -6,6 +6,7 @@ import Navbar from '@/components/vc_list/navbar';
 import Logo from '@/components/ui/logo';
 import defaultImageProfile from '@/public/images/default-profile.jpg';
 import { authOptions } from '@/app/api/auth/[...nextauth]/route';
+import SignOutButton from '@/components/auth/sign-out-button';
 
 export default async function VcListLayout({ children }: { children: React.ReactNode }) {
   const data = await getServerSession(authOptions);
@@ -19,32 +20,26 @@ export default async function VcListLayout({ children }: { children: React.React
   }
 
   return (
-    <div className="flex">
-      <nav className="flex h-screen w-[256px] flex-col justify-between">
-        <div className="w-full">
-          <div className="w-3/4 pl-10 pt-12">
-            <Logo />
-          </div>
-          <nav className="flex flex-col p-4">
-            <Navbar />
-          </nav>
+    <div className="flex h-screen w-full gap-2 overflow-y-hidden bg-gray-100">
+      <header className="flex h-screen w-full max-w-64 flex-col justify-between bg-white py-8">
+        <div>
+          <Logo className="mx-auto mb-6 mt-4 w-3/5" />
+          <Navbar />
         </div>
-        <div className="mb-10 mt-auto flex flex-col items-center">
+        <div className="flex flex-col items-center">
           <Image
             src={imageProfile}
             className="rounded-full"
-            width={90}
-            height={100}
-            quality={80}
+            width={86}
+            height={86}
+            quality={100}
             alt={`Linkedin Profile Picture of ${data?.user?.name}`}
           />
-          <h3 className="text-base">{data?.user?.name}</h3>
-          <a href="#" className="text-fsGray text-sm">
-            Cerrar Sesión
-          </a>
+          <p className="my-2 text-center text-base font-semibold">{data?.user?.name}</p>
+          <SignOutButton className="text-sm text-fsGray" text="Sign Out" />
         </div>
-      </nav>
-      <main className="grow">{children}</main>
+      </header>
+      <main className="flex w-full flex-col gap-2">{children}</main>
     </div>
   );
 }
