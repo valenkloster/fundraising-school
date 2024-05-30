@@ -1,4 +1,3 @@
-import React from 'react';
 import {
   IdentificationIcon,
   BookmarkIcon,
@@ -6,40 +5,47 @@ import {
   InboxArrowDownIcon,
   ScaleIcon,
 } from '@heroicons/react/24/outline';
+import Link from 'next/link';
 
 const Navbar = () => {
   return (
-    <nav className="flex flex-col p-[16px]">
-      <button className="btn-sm w-full justify-start rounded-3xl bg-white px-4 text-sm text-fsGray hover:bg-lightFsPurple hover:font-bold hover:text-fsPurple md:px-8 lg:px-14">
-        <div className="w-6 pr-2">
-          <IdentificationIcon className="size-5" />
-        </div>
+    <nav className="flex flex-col p-4">
+      <Link
+        href=""
+        className="flex h-10 items-center gap-2 rounded-3xl px-6 text-sm text-fsGray hover:bg-lightFsPurple hover:text-fsPurple"
+      >
+        <IdentificationIcon className="size-5" />
         VC List
-      </button>
-      <button className="btn-sm w-full justify-start rounded-3xl bg-white px-4 text-sm text-fsGray hover:bg-lightFsPurple hover:font-bold hover:text-fsPurple md:px-8 lg:px-14">
-        <div className="w-6 pr-2">
-          <BookmarkIcon className="size-5" />
-        </div>
+      </Link>
+      <Link
+        href=""
+        className="flex h-10 items-center gap-2 rounded-3xl px-6 text-sm text-fsGray hover:bg-lightFsPurple hover:text-fsPurple"
+      >
+        <BookmarkIcon className="size-5" />
         Favoritos
-      </button>
-      <button className="btn-sm w-full justify-start rounded-3xl bg-white px-4 text-sm text-fsGray hover:bg-lightFsPurple hover:font-bold hover:text-fsPurple md:px-8 lg:px-14">
-        <div className="w-6 pr-2">
-          <RectangleGroupIcon className="size-5" />
-        </div>
+      </Link>
+      <Link
+        href=""
+        className="flex h-10 items-center gap-2 rounded-3xl px-6 text-sm text-fsGray hover:bg-lightFsPurple hover:text-fsPurple"
+      >
+        <RectangleGroupIcon className="size-5" />
         CRM
-      </button>
-      <button className="btn-sm w-full justify-start rounded-3xl bg-white px-4 text-sm text-fsGray hover:bg-lightFsPurple hover:font-bold hover:text-fsPurple md:px-8 lg:px-14">
-        <div className="w-6 pr-2">
-          <InboxArrowDownIcon className="size-5" />
-        </div>
+      </Link>
+      <Link
+        href=""
+        className="flex h-10 items-center gap-2 rounded-3xl px-6 text-sm text-fsGray hover:bg-lightFsPurple hover:text-fsPurple"
+      >
+        <InboxArrowDownIcon className="size-5" />
         Pitch
-      </button>
-      <button className="btn-sm w-full justify-start rounded-3xl bg-white px-4 text-sm text-fsGray hover:bg-lightFsPurple hover:font-bold hover:text-fsPurple md:px-8 lg:px-14">
-        <div className="w-6 pr-2">
-          <ScaleIcon className="size-5" />
-        </div>
+      </Link>
+      <Link
+        href=""
+        className="flex h-10 items-center gap-2 rounded-3xl px-6 text-sm text-fsGray hover:bg-lightFsPurple hover:text-fsPurple"
+      >
+        <ScaleIcon className="size-5" />
         Fundable
-      </button>
+      </Link>
+      <hr className="mt-2" />
     </nav>
   );
 };

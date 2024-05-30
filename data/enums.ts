@@ -11,8 +11,8 @@ export const AppLink = {
     SignIn: '/signin',
   },
   VcList: {
-    BaseData: '/vs_list',
-    Home: '/vs_list',
+    BaseData: '/vc_list',
+    Home: '/vc_list',
   },
   Home: '/',
 };
@@ -41,4 +41,4 @@ export const Rounds: Round[] = [
   },
 ];
 
-export const ProtectedRoutes: string[] = ['/vs_list', '/activation'];
+export const ProtectedRoutes: string[] = ['/vc_list', '/activation'];
