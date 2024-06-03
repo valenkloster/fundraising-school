@@ -4,7 +4,11 @@ import { ProtectedRoutes } from './data/enums';
 
 export async function middleware(req: NextRequest) {
   const token = await getToken({ req, secret: process.env.NEXTAUTH_SECRET });
+  const headers = new Headers(req.headers);
   const { pathname } = req.nextUrl;
+
+  // Set the current path in the headers
+  headers.set('x-current-path', pathname);
 
   // Check if the route is protected and the user is not logged in
   // If so, redirect to the login page
@@ -19,7 +23,7 @@ export async function middleware(req: NextRequest) {
     return NextResponse.redirect(new URL('/activation/', req.url));
   }
 
-  return NextResponse.next();
+  return NextResponse.next({ headers });
 }
 
 export const config = {
