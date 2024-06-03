@@ -1,51 +1,61 @@
+'use client';
+
 import {
   IdentificationIcon,
-  BookmarkIcon,
-  RectangleGroupIcon,
-  InboxArrowDownIcon,
-  ScaleIcon,
+  VideoCameraIcon,
+  HomeIcon,
+  SignalIcon,
 } from '@heroicons/react/24/outline';
 import Link from 'next/link';
+import clsx from 'clsx';
+import { usePathname } from 'next/navigation';
 
 const Navbar = () => {
+  const pathname = usePathname();
+
   return (
-    <nav className="flex flex-col p-4">
+    <nav className="flex flex-col gap-1 p-4">
       <Link
-        href=""
-        className="flex h-10 items-center gap-2 rounded-3xl px-6 text-sm text-fsGray hover:bg-lightFsPurple hover:text-fsPurple"
+        href="/product"
+        className={clsx(
+          pathname === '/product' && 'bg-secondLightFsPurple font-semibold text-fsPurple',
+          'flex h-10 items-center gap-2 rounded-3xl px-6 text-sm font-semibold text-fsGray hover:bg-secondLightFsPurple hover:text-fsPurple',
+        )}
+      >
+        <HomeIcon className="size-5" />
+        Home
+      </Link>
+      <Link
+        href="/product/course"
+        className={clsx(
+          pathname === '/product/course' && 'bg-secondLightFsPurple font-semibold text-fsPurple',
+          'flex h-10 items-center gap-2 rounded-3xl px-6 text-sm font-semibold text-fsGray hover:bg-secondLightFsPurple hover:text-fsPurple',
+        )}
+      >
+        <VideoCameraIcon className="size-5" />
+        Course
+      </Link>
+      <Link
+        href="/product/podcast"
+        className={clsx(
+          pathname === '/product/podcast' && 'bg-secondLightFsPurple font-semibold text-fsPurple',
+          'flex h-10 items-center gap-2 rounded-3xl px-6 text-sm font-semibold text-fsGray hover:bg-secondLightFsPurple hover:text-fsPurple',
+        )}
+      >
+        <SignalIcon className="size-5" />
+        Podcast
+      </Link>
+      <Link
+        href="/product/vc_list"
+        className={clsx(
+          pathname === '/product/vc_list' && 'bg-secondLightFsPurple font-semibold text-fsPurple',
+          'flex h-10 items-center gap-2 rounded-3xl px-6 text-sm font-semibold text-fsGray hover:bg-secondLightFsPurple hover:text-fsPurple',
+        )}
       >
         <IdentificationIcon className="size-5" />
         VC List
       </Link>
-      <Link
-        href=""
-        className="flex h-10 items-center gap-2 rounded-3xl px-6 text-sm text-fsGray hover:bg-lightFsPurple hover:text-fsPurple"
-      >
-        <BookmarkIcon className="size-5" />
-        Favoritos
-      </Link>
-      <Link
-        href=""
-        className="flex h-10 items-center gap-2 rounded-3xl px-6 text-sm text-fsGray hover:bg-lightFsPurple hover:text-fsPurple"
-      >
-        <RectangleGroupIcon className="size-5" />
-        CRM
-      </Link>
-      <Link
-        href=""
-        className="flex h-10 items-center gap-2 rounded-3xl px-6 text-sm text-fsGray hover:bg-lightFsPurple hover:text-fsPurple"
-      >
-        <InboxArrowDownIcon className="size-5" />
-        Pitch
-      </Link>
-      <Link
-        href=""
-        className="flex h-10 items-center gap-2 rounded-3xl px-6 text-sm text-fsGray hover:bg-lightFsPurple hover:text-fsPurple"
-      >
-        <ScaleIcon className="size-5" />
-        Fundable
-      </Link>
-      <hr className="mt-2" />
+      <hr className="mt-4 " />
     </nav>
   );
 };
