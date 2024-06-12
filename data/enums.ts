@@ -14,6 +14,9 @@ export const AppLink = {
     BaseData: '/vc_list',
     Home: '/vc_list',
   },
+  Product: {
+    Home: '/product',
+  },
   Home: '/',
 };
 

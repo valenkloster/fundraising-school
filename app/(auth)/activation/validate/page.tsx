@@ -1,21 +1,14 @@
-import { StaticImport } from 'next/dist/shared/lib/get-img-props';
 import { getServerSession } from 'next-auth';
 import Image from 'next/image';
 
 import { authOptions } from '@/app/api/auth/[...nextauth]/route';
-import defaultImageProfile from '@/public/images/default-profile.jpg';
 import ConfirmUserDataForm from '@/components/auth/confirm-user-data-form';
+import { correctImage } from '@/utils/validations';
 
 export default async function Page() {
   const data = await getServerSession(authOptions);
 
-  let imageProfile: string | StaticImport;
-
-  if (data?.user?.image) {
-    imageProfile = data?.user?.image;
-  } else {
-    imageProfile = defaultImageProfile;
-  }
+  const imageProfile = correctImage(data?.user?.image);
 
   return (
     <div className="flex h-full flex-col items-center justify-around px-8 py-6 lg:p-0">

@@ -16,7 +16,25 @@ export async function POST(req: Request) {
   }
 
   if (response.status === 200) {
-    return Response.json({ message: 'User exists' }, { status: 200 });
+    const responseData = await response.json();
+
+    if (!responseData.nickname || responseData.nickname === '') {
+      return Response.json({ message: 'User exist without contact info' }, { status: 200 });
+    }
+
+    if (!responseData.seeking_capital) {
+      return Response.json({ message: 'User exist without info about round' }, { status: 200 });
+    }
+
+    return Response.json(
+      {
+        message: 'User exists',
+        nickname: responseData.nickname,
+        contact_email: responseData.contact_email,
+        image_url: responseData.photo_url,
+      },
+      { status: 200 },
+    );
   }
 
   if (response.status === 404) {
@@ -37,7 +55,7 @@ export async function POST(req: Request) {
       body: JSON.stringify(body),
     });
 
-    if (createUserResponse.status === 200) {
+    if (createUserResponse.status === 200 || createUserResponse.status === 201) {
       return Response.json({ message: 'User created' }, { status: 200 });
     }
 

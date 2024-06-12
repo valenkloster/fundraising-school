@@ -1,7 +1,8 @@
-import { GoogleAnalytics } from '@next/third-parties/google';
+// import { GoogleAnalytics } from '@next/third-parties/google';
 
 import '@/styles/style.css';
 import { dm_sans } from '@/app/fonts';
+import { UserStoreProvider } from '@/providers/user-store-provider';
 
 export const metadata = {
   title: 'Fundraising School - Be a great deal for investors and raise money like a pro',
@@ -13,9 +14,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en" className={`${dm_sans.variable}`}>
       <body className="bg-white font-sans tracking-tight text-gray-900 antialiased">
-        {children}
+        <UserStoreProvider>{children}</UserStoreProvider>
       </body>
-      <GoogleAnalytics gaId={process.env.GOOGLE_ANALYTICS_ID as string} />
+      {/* <GoogleAnalytics gaId={process.env.GOOGLE_ANALYTICS_ID as string} /> */}
     </html>
   );
 }

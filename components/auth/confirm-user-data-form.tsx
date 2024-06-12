@@ -1,12 +1,14 @@
 'use client';
 
-import { useState, useEffect, useCallback, FormEvent } from 'react';
+import { useState, useEffect, FormEvent } from 'react';
 import { Session } from 'next-auth';
 import { useRouter } from 'next/navigation';
 import { UserIcon, EnvelopeIcon, CheckIcon, XMarkIcon } from '@heroicons/react/24/outline';
 import ClipLoader from 'react-spinners/ClipLoader';
 import { IsValidEmail, IsValidName } from '@/utils/validations';
 import { AppLink } from '@/data/enums';
+import { updateContactInfoUser } from '@/utils/auth';
+import { useUserStore } from '@/providers/user-store-provider';
 
 export default function ConfirmUserDataForm({ data }: { data: Session | null }) {
   const router = useRouter();
@@ -19,21 +21,33 @@ export default function ConfirmUserDataForm({ data }: { data: Session | null }) 
 
   const [loading, setLoading] = useState<boolean>(false);
 
-  const handleSubmit = useCallback(
-    (e: FormEvent<HTMLFormElement>) => {
-      e.preventDefault();
+  const { updateUserInfo } = useUserStore((state) => state);
 
-      if (!validName || !validEmail) {
-        return;
-      }
+  const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
 
-      // Do something with the data
-      setLoading(true);
+    if (!validName || !validEmail) {
+      return;
+    }
+
+    setLoading(true);
+
+    try {
+      await updateContactInfoUser({
+        contact_email: email,
+        email: data?.user?.email as string,
+        nickname: name,
+      });
+
+      updateUserInfo(name, email, data?.user?.image as string, data?.user?.image as string);
 
       router.replace(AppLink.Activation.Round);
-    },
-    [validName, validEmail, router],
-  );
+    } catch {
+      console.error('Error update contact info');
+    } finally {
+      setLoading(false);
+    }
+  };
 
   useEffect(() => {
     // Validate name, if empty set validName to false

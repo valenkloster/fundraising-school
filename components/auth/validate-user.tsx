@@ -1,6 +1,5 @@
 'use client';
 
-import { AppRouterInstance } from 'next/dist/shared/lib/app-router-context.shared-runtime';
 import { useCallback, useState, useEffect } from 'react';
 import { Session } from 'next-auth';
 import { useRouter } from 'next/navigation';
@@ -10,66 +9,28 @@ import ClipLoader from 'react-spinners/ClipLoader';
 
 import SignOutButton from '@/components/auth/sign-out-button';
 import { AppLink } from '@/data/enums';
-
-const validateNewUser = async (user: Session, router: AppRouterInstance) => {
-  if (user.user?.name === '' || user.user?.name === null || !user.user?.name) {
-    console.error('User name is empty');
-    return;
-  }
-
-  let response;
-  try {
-    response = await fetch('/api/user', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify({ user }),
-    });
-
-    if (response.status === 200) {
-      const data = await response.json();
-      console.log('message', data.message);
-      if (data.message === 'User exists') {
-        router.replace(AppLink.Home);
-        return;
-      }
-
-      if (data.message === 'User created') {
-        router.replace(AppLink.Activation.Home);
-        return;
-      }
-
-      console.error('Error creating user');
-      return;
-    }
-  } catch (error) {
-    console.error('Error validating user', error);
-
-    if (!response) {
-      console.error('Error validating user');
-      return;
-    }
-
-    const data = await response.json();
-    console.log('error', data.message);
-    if (response.status === 400) {
-      signOut({ callbackUrl: AppLink.Auth.SignIn });
-      return;
-    }
-  }
-};
+import { validateNewUser } from '@/utils/auth';
+import { useUserStore } from '@/providers/user-store-provider';
 
 export default function ValidateUser({ user }: { user: Session | null }) {
+  const { updateUserInfo } = useUserStore((state) => state);
+
   const [loading, setLoading] = useState<boolean>(false);
   const router = useRouter();
 
   useEffect(() => {
+    // When the component is mounted, setLoading is set to false
+
     return () => {
       setLoading(false);
     };
   }, []);
 
+  /**
+   * Handles the button click event.
+   * If there is no user, it signs out and redirects to the sign-in page.
+   * Otherwise, it validates the new user and performs necessary actions.
+   */
   const handleButton = useCallback(async () => {
     setLoading(true);
 
@@ -78,8 +39,8 @@ export default function ValidateUser({ user }: { user: Session | null }) {
       return;
     }
 
-    await validateNewUser(user, router);
-  }, [user, router]);
+    await validateNewUser(user, router, updateUserInfo);
+  }, [user, router, updateUserInfo]);
 
   if (loading) {
     return (
