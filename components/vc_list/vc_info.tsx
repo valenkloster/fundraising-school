@@ -121,12 +121,12 @@ export default function InfoVC({ isOpen, onClose }: InfoVCProps) {
             <img
               src="https://t3.ftcdn.net/jpg/02/43/12/34/360_F_243123463_zTooub557xEWABDLk0jJklDyLSGl2jrr.jpg"
               alt="Profile"
-              className="mb-2 w-28 h-28 rounded-full"
+              className="mb-2 h-28 w-28 rounded-full"
             />
             <p className="font-bold text-gray-800">Matthew Jackson</p>
             <p className="text-sm text-gray-600">Head of Products</p>
             <div className="mt-1 flex w-full justify-around">
-              <div className="w-6 h-6">
+              <div className="h-6 w-6">
                 <LinkIcon />
               </div>
               <img
@@ -145,12 +145,12 @@ export default function InfoVC({ isOpen, onClose }: InfoVCProps) {
             <img
               src="https://t3.ftcdn.net/jpg/02/43/12/34/360_F_243123463_zTooub557xEWABDLk0jJklDyLSGl2jrr.jpg"
               alt="Profile"
-              className="mb-2 w-28 h-28 rounded-full"
+              className="mb-2 h-28 w-28 rounded-full"
             />
             <p className="font-bold text-gray-800">Matthew Jackson</p>
             <p className="text-sm text-gray-600">Head of Products</p>
             <div className="mt-1 flex w-full justify-around">
-              <div className="w-6 h-6">
+              <div className="h-6 w-6">
                 <LinkIcon />
               </div>
               <img
@@ -169,12 +169,12 @@ export default function InfoVC({ isOpen, onClose }: InfoVCProps) {
             <img
               src="https://t3.ftcdn.net/jpg/02/43/12/34/360_F_243123463_zTooub557xEWABDLk0jJklDyLSGl2jrr.jpg"
               alt="Profile"
-              className="mb-2 w-28 h-28 rounded-full"
+              className="mb-2 h-28 w-28 rounded-full"
             />
             <p className="font-bold text-gray-800">Matthew Jackson</p>
             <p className="text-sm text-gray-600">Head of Products</p>
             <div className="mt-1 flex w-full justify-around">
-              <div className="w-6 h-6">
+              <div className="h-6 w-6">
                 <LinkIcon />
               </div>
               <img
