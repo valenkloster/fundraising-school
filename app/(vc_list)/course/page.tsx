@@ -15,10 +15,11 @@ const Page: React.FC = () => {
           <VideoSection />
           <Summary />
         </div>
-        <aside className="w-1/3 overflow-y-auto p-4">
+        <div className="mx-4 h-full w-px bg-gray-300"></div> {/* Divider with Tailwind CSS */}
+        <div className="w-1/3 overflow-y-auto p-4">
           <Progress />
           <Lesson />
-        </aside>
+        </div>
       </div>
     </>
   );
