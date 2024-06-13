@@ -7,12 +7,9 @@ export default function SearchInput() {
 
   const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    console.log('Search');
   };
 
-  useEffect(() => {
-    console.log('SearchInput:', searchInput);
-  }, [searchInput]);
+  useEffect(() => {}, [searchInput]);
 
   return (
     <form onSubmit={handleSubmit}>

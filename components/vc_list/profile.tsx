@@ -17,6 +17,7 @@ export default function Profile({ data }: { data: Session }) {
         height={86}
         quality={100}
         alt={`Linkedin Profile Picture of ${name}`}
+        priority
       />
       <p className="my-2 text-center text-base font-semibold">{name}</p>
       <SignOutButton className="text-sm text-fsGray" text="Sign Out" />

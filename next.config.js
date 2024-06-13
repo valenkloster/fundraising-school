@@ -9,6 +9,7 @@ const nextConfig = {
         pathname: '/dms/image/**',
       },
     ],
+    domains: ['cdn.prod.website-files.com'],
   },
 };
 

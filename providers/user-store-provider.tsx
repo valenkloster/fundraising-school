@@ -3,7 +3,7 @@
 import { type ReactNode, createContext, useRef, useContext } from 'react';
 import { type StoreApi, useStore } from 'zustand';
 
-import { type UserStore, createUserStore, initCounterStore } from '@/stores/user-store';
+import { type UserStore, createUserStore, initUserStore } from '@/stores/user-store';
 
 export const UserStoreContext = createContext<StoreApi<UserStore> | null>(null);
 
@@ -14,18 +14,18 @@ export interface UserStoreProviderProps {
 export const UserStoreProvider = ({ children }: UserStoreProviderProps) => {
   const storeRef = useRef<StoreApi<UserStore>>();
   if (!storeRef.current) {
-    storeRef.current = createUserStore(initCounterStore());
+    storeRef.current = createUserStore(initUserStore());
   }
 
   return <UserStoreContext.Provider value={storeRef.current}>{children}</UserStoreContext.Provider>;
 };
 
 export const useUserStore = <T,>(selector: (store: UserStore) => T): T => {
-  const counterStoreContext = useContext(UserStoreContext);
+  const userStoreContext = useContext(UserStoreContext);
 
-  if (!counterStoreContext) {
+  if (!userStoreContext) {
     throw new Error(`useUserStore must be use within UserStoreProvider`);
   }
 
-  return useStore(counterStoreContext, selector);
+  return useStore(userStoreContext, selector);
 };

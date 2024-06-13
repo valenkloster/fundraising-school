@@ -22,7 +22,7 @@ export type UserActions = {
 
 export type UserStore = UserState & UserActions;
 
-export const initCounterStore = (): UserState => {
+export const initUserStore = (): UserState => {
   return { contact_email: '', email: '', nickname: '', image_url: '' };
 };
 
