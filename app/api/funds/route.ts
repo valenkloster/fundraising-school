@@ -6,6 +6,11 @@ export async function GET(req: NextRequest) {
   let page = searchParams.get('page');
   let limit = searchParams.get('limit');
 
+  const round = searchParams.get('round');
+  const check_size = searchParams.get('check_size');
+  const sector = searchParams.get('sector');
+  const location = searchParams.get('location');
+
   if (!page) {
     page = '1';
   }
@@ -18,6 +23,19 @@ export async function GET(req: NextRequest) {
     page,
     limit,
   });
+
+  if (round) {
+    params.append('round_op', round);
+  }
+  if (check_size) {
+    params.append('check_size', check_size);
+  }
+  if (sector) {
+    params.append('sector', sector);
+  }
+  if (location) {
+    params.append('country', location);
+  }
 
   const resp = await fetch(`${process.env.BACKEND_GATEWAY_URL}/vc_sheet/funds?${params}`, {
     method: 'GET',

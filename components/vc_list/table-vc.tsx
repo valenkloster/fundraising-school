@@ -1,12 +1,14 @@
 'use client';
 
 import { useEffect } from 'react';
-import RowTableVC from './table_vc/row-table-vc';
+import RowTableVC from '@/components/vc_list/table_vc/row-table-vc';
 import { useFundStore } from '@/providers/funds-store-providers';
 import useLazyLoad from '@/hooks/useLazyLoad';
 
 export default function TableVC() {
-  const { total, page, setPage, funds, setFunds, setTotal } = useFundStore((state) => state);
+  const { total, page, setPage, funds, setFunds, setTotal, selected_filter_options } = useFundStore(
+    (state) => state,
+  );
 
   const { showNext } = useLazyLoad();
 
@@ -15,7 +17,22 @@ export default function TableVC() {
       return;
     }
 
-    fetch(`/api/funds?` + new URLSearchParams({ page: page.toString(), limit: '25' }), {
+    const url_params = new URLSearchParams({ page: page.toString(), limit: '25' });
+
+    if (selected_filter_options.round) {
+      url_params.append('round', selected_filter_options.round);
+    }
+    if (selected_filter_options.check_size) {
+      url_params.append('check_size', selected_filter_options.check_size);
+    }
+    if (selected_filter_options.sector) {
+      url_params.append('sector', selected_filter_options.sector);
+    }
+    if (selected_filter_options.location) {
+      url_params.append('location', selected_filter_options.location);
+    }
+
+    fetch(`/api/funds?` + url_params, {
       method: 'GET',
     })
       .then((response) => response.json())
@@ -25,18 +42,20 @@ export default function TableVC() {
         setPage(data.page);
       })
       .catch((error) => console.error('Error:', error));
-  }, [funds.length, page, setFunds, setPage, setTotal]);
+  }, [funds.length, page, selected_filter_options, setFunds, setPage, setTotal]);
 
   return (
     <table className="mt-6 size-full ">
       <thead className="h-14 border-b border-neutral-200">
-        <tr className="mr-16 flex items-center justify-between [&>th]:text-left [&>th]:text-neutral-500">
+        <tr className="mr-16 flex items-center justify-between  [&>th]:text-left [&>th]:text-neutral-500">
           <th className="w-72">
             {total} <br />
             Investors
           </th>
           <th>Fav</th>
-          <th>Geography</th>
+          <th className="w-1/5">
+            <p className="text-center">Geography</p>
+          </th>
           <th>Checks</th>
           <th>Stages</th>
         </tr>

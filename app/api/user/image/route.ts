@@ -2,7 +2,7 @@ export async function POST(req: Request) {
   const data = await req.json();
 
   const updateUserResponse = await fetch(`${process.env.BACKEND_GATEWAY_URL}/user/image`, {
-    method: 'GET',
+    method: 'POST',
     headers: {
       'Content-Type': 'application/json',
     },

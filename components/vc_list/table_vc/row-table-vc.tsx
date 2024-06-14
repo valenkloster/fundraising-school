@@ -1,11 +1,13 @@
 'use client';
 
 import Image from 'next/image';
-import { StarIcon } from '@heroicons/react/24/outline';
+import { LegacyRef } from 'react';
 
 import { VCProfile } from '@/models/vc_list';
-import VCLinks from './vc_links';
-import { LegacyRef } from 'react';
+import VCLinks from '@/components/vc_list/table_vc/vc_links';
+import CountriesVC from '@/components/vc_list/table_vc/countries-vc';
+import FavVC from '@/components/vc_list/table_vc/fav-vc';
+import CheckSizeVC from './check_size_vc';
 
 function InnerRowTableVC({ vc_profile }: { vc_profile: VCProfile }) {
   return (
@@ -23,13 +25,10 @@ function InnerRowTableVC({ vc_profile }: { vc_profile: VCProfile }) {
           <VCLinks vc_profile={vc_profile} />
         </div>
       </td>
-      <td>
-        <button onClick={() => console.log('Add to fav')}>
-          <StarIcon className="size-5 text-black hover:fill-fsPurple hover:text-fsPurple" />
-        </button>
-      </td>
-      <td>Check Size 1</td>
-      <td>Investment Focus 1</td>
+      <FavVC fund_id={vc_profile.id} />
+
+      <CountriesVC countries={vc_profile.countries} />
+      <CheckSizeVC check_size={vc_profile.check_size} />
       <td>Stages</td>
     </>
   );
@@ -44,14 +43,14 @@ export default function RowTableVC({
 }) {
   if (refProp) {
     return (
-      <tr ref={refProp} className="my-4">
+      <tr ref={refProp} className="my-4 ">
         <InnerRowTableVC vc_profile={vc_profile} />
       </tr>
     );
   }
 
   return (
-    <tr className="my-4">
+    <tr className="my-4 ">
       <InnerRowTableVC vc_profile={vc_profile} />
     </tr>
   );

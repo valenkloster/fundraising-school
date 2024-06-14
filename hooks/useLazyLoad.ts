@@ -2,7 +2,9 @@ import { useFundStore } from '@/providers/funds-store-providers';
 import { useCallback, useRef } from 'react';
 
 function useLazyLoad() {
-  const { page, setPage, addFunds } = useFundStore((state) => state);
+  const { page, setPage, addFunds, funds, total, selected_filter_options } = useFundStore(
+    (state) => state,
+  );
 
   const lastItem = useRef<IntersectionObserver | null>(null);
 
@@ -16,9 +18,28 @@ function useLazyLoad() {
 
       const intersection = (entries: IntersectionObserverEntry[]) => {
         if (entries[0].isIntersecting) {
+          if (funds.length === total) {
+            return;
+          }
+
           const newPage = page + 1;
 
-          fetch(`/api/funds?` + new URLSearchParams({ page: newPage.toString(), limit: '25' }), {
+          const url_params = new URLSearchParams({ page: newPage.toString(), limit: '25' });
+
+          if (selected_filter_options.round) {
+            url_params.append('round', selected_filter_options.round);
+          }
+          if (selected_filter_options.check_size) {
+            url_params.append('check_size', selected_filter_options.check_size);
+          }
+          if (selected_filter_options.sector) {
+            url_params.append('sector', selected_filter_options.sector);
+          }
+          if (selected_filter_options.location) {
+            url_params.append('location', selected_filter_options.location);
+          }
+
+          fetch(`/api/funds?` + url_params, {
             method: 'GET',
           })
             .then((response) => response.json())
@@ -31,12 +52,12 @@ function useLazyLoad() {
       };
 
       lastItem.current = new IntersectionObserver(intersection, {
-        rootMargin: '500px',
+        rootMargin: '400px',
       });
 
       lastItem.current.observe(element);
     },
-    [addFunds, page, setPage],
+    [addFunds, page, selected_filter_options, setPage, funds, total],
   );
 
   return { showNext };

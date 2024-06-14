@@ -7,30 +7,50 @@ import { VCProfile } from '@/models/vc_list';
 export default function VCLinks({ vc_profile }: { vc_profile: VCProfile }) {
   return (
     <ul className="mt-2 flex gap-1">
-      {vc_profile.website && (
+      {vc_profile.website && vc_profile.website.length !== 0 && (
         <li>
-          <a href={vc_profile.website} target="_blank" rel="noreferrer" className="text-black">
+          <a
+            href={vc_profile.website}
+            target="_blank"
+            rel="noreferrer"
+            className="text-neutral-600"
+          >
             <LinkIcon className="size-4" />
           </a>
         </li>
       )}
-      {vc_profile.linkedin && (
+      {vc_profile.linkedin && vc_profile.linkedin.length !== 0 && (
         <li>
-          <a href={vc_profile.linkedin} target="_blank" rel="noreferrer" className="text-black">
+          <a
+            href={vc_profile.linkedin}
+            target="_blank"
+            rel="noreferrer"
+            className="text-neutral-600"
+          >
             <FaLinkedin className="size-4" />
           </a>
         </li>
       )}
-      {vc_profile.twitter && (
+      {vc_profile.twitter && vc_profile.twitter.length !== 0 && (
         <li>
-          <a href={vc_profile.twitter} target="_blank" rel="noreferrer" className="text-black">
+          <a
+            href={vc_profile.twitter}
+            target="_blank"
+            rel="noreferrer"
+            className="text-neutral-600"
+          >
             <FaXTwitter className="size-4" />
           </a>
         </li>
       )}
-      {vc_profile.crunch_base && (
+      {vc_profile.crunch_base && vc_profile.crunch_base.length !== 0 && (
         <li>
-          <a href={vc_profile.crunch_base} target="_blank" rel="noreferrer" className="text-black">
+          <a
+            href={vc_profile.crunch_base}
+            target="_blank"
+            rel="noreferrer"
+            className="text-neutral-600"
+          >
             <SiCrunchbase className="size-4" />
           </a>
         </li>
